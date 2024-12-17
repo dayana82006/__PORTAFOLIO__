@@ -1,0 +1,180 @@
+
+
+#languageSelector{
+    background-color: black;
+    color: rgb(116, 116, 116);
+    border-color: rgb(14, 11, 11) ;
+  }
+  
+     section {
+      min-height: 100vh; 
+    }
+    
+    .aboutme{
+      padding: 20px;
+      padding-right:50px;
+      background-color: black;
+      color: white;
+    }
+  
+    .container{
+      padding: 100px;
+    }
+  
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1; 
+    }
+  
+    @media (max-width: 760px){
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 140%;
+        object-fit: cover;
+        z-index: -1; 
+      }
+      .logo{
+        object-fit: cover;
+        height: 12vh;
+      }
+    }
+    
+    @media (min-width: 400px){
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 160%;
+        object-fit: cover;
+        z-index: -1; 
+      }
+      .logo{
+        object-fit: cover;
+        height: 12vh;
+      }
+    }
+  
+   #offcanvasDarkNavbar{
+      background-color: rgba(0, 0, 0, 0.734) !important;
+    }
+  
+  .text-withe{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(49, 49, 49, 0.584);
+  }
+  
+  .text-withe button{
+    padding: 10px;
+  }
+  
+  
+  .profile{
+    width: 25vw;
+    min-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(98, 98, 98, 0.44);
+    margin: 20px;
+  
+  }
+  
+  @media screen and (min-width: 810px) and (max-width: 900px) {
+    section{
+      margin-top: 100px;
+    }
+   
+  }
+  
+  /* Ocultar la imagen en pantallas menores a 768px */
+  @media (max-width: 767px) {
+    .responsive-img {
+      display: none;
+    } 
+  }
+  
+  /* Mostrar la imagen solo en pantallas mayores o iguales a 768px */
+  @media (min-width: 768px) {
+    .responsive-img {
+      display: block;
+      
+    }
+  }
+  
+  .profile:hover{
+    box-shadow: 1px 1px 4px rgb(255, 255, 255);
+  }
+  
+   .canva{
+    top: 0;
+    right: 0;
+    width: var(--bs-offcanvas-width);
+    border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateX(100%);
+   }
+  
+   .text-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40vh;
+    flex-wrap: wrap ;
+    padding-top: 60px;
+   }
+  
+   .text-info h4{
+    color: rgb(141, 141, 141);
+    font-style: oblique;
+   }
+  
+   .text-info h4:hover{
+    color: rgb(255, 255, 255);
+    margin-top: -50px;
+    font-style: oblique;
+    text-shadow: 2px 2px 4px rgba(123, 123, 123, 0.79);
+   }
+  
+   .btn-download{
+    background-color: rgb(11, 11, 12);
+    color: rgb(235, 235, 235);
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    
+   }
+  
+   .btn-download:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px rgb(255, 255, 255);
+    transform: scale(1.15);
+   }
+   
+   .info2{
+    position: absolute;
+   }
+  
+   .info2 img{
+    height: 120px;
+    width: 200px;
+    position: relative;
+    right: 0px;
+  }
+  
+  .info1 img{
+    height: 120px;
+    width: 200px;
+  }
+  
+  .profilec, .profilep{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.79); 
+  }
