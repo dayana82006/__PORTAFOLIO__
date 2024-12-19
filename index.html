@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-  </head>
+    <title>Freelancer - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+   
+</head>
   <body>
     <nav class="navbar navbar-dark bg-black fixed-top">
       <div class="container-fluid">
@@ -46,12 +52,14 @@
               <select id="languageSelector" class="form-select w-auto mx-auto">
                 <option value="es">Español</option>
                 <option value="en">English</option>
+                <option value="it">Italiano</option>
+                <option value="fr">French</option>
               </select>
               <li class="nav-item">
                 <a id="homemenu" class="nav-link" aria-current="page" href="#home">Inicio</a>
               </li>
               <li class="nav-item">
-                <a id="about" class="nav-link" href="#aboutme">Acerca de</a>
+                <a id="about" class="nav-link" href="pages/aboutMe.html">Acerca de</a>
               </li>
               <li class="nav-item">
                 <a id="projects" class="nav-link" href="#projects">Proyectos</a>
@@ -79,12 +87,8 @@
                 DESARROLLADORA <br />
                 JUNIOR FULL STACK
               </h1>
-              <h4 id="shortd">"Los errores son el camino a la victoria"</h4>
-              <p id="description1" style="color: white"
-                >Soy una joven en formación con una sólida base tanto en
-                tecnología como en danza, lo que me permite integrar creatividad
-                y habilidades técnicas en proyectos multidisciplinarios.</p
-              >
+              <h4 id="shortd">"Cada error es un paso firme hacia el triunfo."</h4>
+              
             </div>
           </div>
           <div class="col-12 col-md-6" style="text-align: center">
@@ -98,44 +102,24 @@
     </section>
 
     <!-- seccion acerca de mi -->
-    <section id="aboutme" class="aboutme" data-aos="fade-up">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="info1">
-              <h1 id="profilep">Perfil profesional</h1>
-              <hr />
-              <p id="description2">
-                Actualmente, estoy desarrollando mis conocimientos en
-                programación, con un enfoque en la creación de soluciones
-                digitales innovadoras. Mi capacidad para aprender rápidamente me
-                permite adaptarme a nuevas herramientas y lenguajes, enfrentando
-                desafíos tecnológicos con agilidad y compromiso.
-              </p>
-              <br />
-              <img class="responsive-img" src="images/decoration4.jpg" alt="" />
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6">
-            <div class="info2">
-              <img  class="responsive-img" src="images/decoration1.png" alt="" />
-              <h1 id="profilec">Perfil Creativo</h1> <hr />
-              <p id="description3">
-                Al mismo tiempo, mi formación en danza me
-                ha enseñado a ser disciplinada, creativa y a trabajar en equipo,
-                habilidades que también aplico en el ámbito tecnológico. Mi
-                interés radica en poder fusionar estos dos mundos, explorando
-                cómo la tecnología puede potenciar la expresión artística y
-                viceversa. Busco desarrollarme en campos como el desarrollo web
-                y la automatización de procesos, siempre con un enfoque que
-                valore la creatividad, la innovación y el trabajo colaborativo.
-              </p>
-            </div>
-          </div>
+   <section class="brv-aboutme" id="brv-aboutme" data-aos="fade-up">
+    <div class="container">
+        <div class="info">
+            <h1 id="about">ACERCA DE MI</h1>
+            <h4 id="description1" style="color: white">Soy desarrolladora web con experiencia 
+                en HTML, CSS, JavaScript y Bootstrap. Además, soy artista apasionada por
+                la danza, buscando fusionar el arte y la tecnología para
+                crear proyectos innovadores.</h4 >
         </div>
-      </div>
-    </section>
+        <br>
+        <a  id="seemore" class="btn-seemore" href="pages/aboutMe.html">Ver más</a>
+    </div>
+    <hr>
+   </section>
+
+   <!-- seccion proyectos -->
+    <sectioc class="projects"></sectioc>
+
    
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/app.js"></script>
