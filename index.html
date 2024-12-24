@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <title>Freelancer - Start Bootstrap Theme</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -77,7 +76,7 @@
     <section class="intro" id="home" data-aos="fade-up">
       <div class="container">
         <video autoplay loop muted>
-          <source src="media/v4.mp4" type="video/mp4" />
+          <source src="media/fondo.mp4" type="video/mp4" />
           Tu navegador no soporta el formato de video.
         </video>
         <div class="row">
@@ -88,13 +87,13 @@
                 JUNIOR FULL STACK
               </h1>
               <h4 id="shortd">"Cada error es un paso firme hacia el triunfo."</h4>
-              
             </div>
           </div>
           <div class="col-12 col-md-6" style="text-align: center">
             <img class="profile img-fluid" src="images/dayana.jpg.jpg" alt="" />
             <h2 id="checkcv" class="text-withe">Revisa mi CV</h2>
-            <button id="download" class="btn-download"><a>Descargar</a></button>
+            <br>
+            <a onclick="saveData()" id="download" class="btn-download" href="media/DOC-20241106-WA0039..pdf" download="MiPortafolio.pdf">Descargar</a>
           </div>
         </div>
        
@@ -102,25 +101,67 @@
     </section>
 
     <!-- seccion acerca de mi -->
-   <section class="brv-aboutme" id="brv-aboutme" data-aos="fade-up">
+  <section class="brv-aboutme" id="brv-aboutme" data-aos="fade-up">
     <div class="container">
-        <div class="info">
-            <h1 id="about">ACERCA DE MI</h1>
-            <h4 id="description1" style="color: white">Soy desarrolladora web con experiencia 
-                en HTML, CSS, JavaScript y Bootstrap. Además, soy artista apasionada por
-                la danza, buscando fusionar el arte y la tecnología para
-                crear proyectos innovadores.</h4 >
-        </div>
-        <br>
-        <a  id="seemore" class="btn-seemore" href="pages/aboutMe.html">Ver más</a>
+      <div class="info">
+        <h1 id="about">ACERCA DE MI</h1>
+        <h4 id="description1" style="color: white">Soy desarrolladora web con experiencia 
+            en HTML, CSS, JavaScript y Bootstrap. Además, soy artista apasionada por
+            la danza, buscando fusionar el arte y la tecnología para
+            crear proyectos innovadores.</h4 >
+            <br>
+             <a  id="seemore" class="btn-seemore" href="pages/aboutMe.html">Ver más</a>
+       </div>
+  </div>
+</section>
+
+<!-- Sección de Proyectos -->
+<section class="projects" id="projects" data-aos="fade-up" style="background-color: black;">
+  <video autoplay loop muted>
+    <source src="../media/fondo.mp4" type="video/mp4" />
+    Tu navegador no soporta el formato de video.
+</video>
+  <div class="container">
+    <h1 class="text-center mb-5">Mis Proyectos</h1>
+    <div class="scroll-container">
+      <!-- Proyecto 1 -->
+      <div class="project-item">
+        <img src="images/MacBook Mockup, Floating.png" alt="Proyecto 1">
+        <h3>Título del Proyecto 1</h3>
+        <p>Breve descripción del proyecto 1. Funcionalidades innovadoras y diseño atractivo.</p>
+        <a href="proyecto1.html" class="btn btn-primary">Ver más</a>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="project-item">
+        <img src="images/MacBook Mockup, Floating (1).png" alt="Proyecto 2">
+        <h3>Título del Proyecto 2</h3>
+        <p>Breve descripción del proyecto 2. Desarrollado con las últimas tecnologías.</p>
+        <a href="proyecto2.html" class="btn btn-primary">Ver más</a>
+      </div>
+      <!-- Proyecto 3 -->
+      <div class="project-item">
+        <img src="images/MacBook Mockup, Floating (2).png" alt="Proyecto 3">
+        <h3>Título del Proyecto 3</h3>
+        <p>Breve descripción del proyecto 3. Un ejemplo perfecto de creatividad y tecnología.</p>
+        <a href="proyecto3.html" class="btn btn-primary">Ver más</a>
+      </div>
+       <!-- Proyecto 4-->
+       <div class="project-item">
+        <img src="images/MacBook Mockup, Floating.png" alt="Proyecto 4">
+        <h3>Título del Proyecto 4</h3>
+        <p>Breve descripción del proyecto 4. Un ejemplo perfecto de creatividad y tecnología.</p>
+        <a href="proyecto4.html" class="btn btn-primary">Ver más</a>
+      </div>
     </div>
-    <hr>
-   </section>
+</section>
 
-   <!-- seccion proyectos -->
-    <sectioc class="projects"></sectioc>
-
-   
+<!--
+<section class="parallax-container"  id="projects" data-aos="fade-up">
+  <div class="content">
+  </div>
+</section>
+-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/app.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>

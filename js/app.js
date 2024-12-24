@@ -114,5 +114,27 @@ AOS.init({
   }
 
   
+function saveData() {
+    // Simular una acción de guardado (puedes reemplazar esto con tu lógica real)
+    const isSaved = true; // Aquí se simula que los datos fueron guardados exitosamente
+
+    if (isSaved) {
+        Swal.fire({
+            title: '¡Guardado exitosamente!',
+            text: 'Tu información ha sido almacenada con éxito.',
+            icon: 'success',
+            confirmButtonText: 'Aceptar',
+            timer: 3000, // Opcional: Cierra automáticamente después de 3 segundos
+            timerProgressBar: true // Muestra una barra de progreso
+        });
+    } else {
+        Swal.fire({
+            title: 'Error',
+            text: 'Ocurrió un problema al guardar tu información.',
+            icon: 'error',
+            confirmButtonText: 'Reintentar'
+        });
+    }
+}
   
   
