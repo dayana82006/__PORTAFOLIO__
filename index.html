@@ -1,169 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DayanaHdz</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-   
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DayanaHdz</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
 </head>
-  <body>
-    <nav class="navbar navbar-dark bg-black fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><img class="logo" src="images/DayanaHernadez.png" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas text-bg-dark canva"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 id="textmenu" class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Explorar mas
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <select id="languageSelector" class="form-select w-auto mx-auto">
-                <option value="es">Español</option>
-                <option value="en">English</option>
-                <option value="it">Italiano</option>
-                <option value="fr">French</option>
-              </select>
-              <li class="nav-item">
-                <a id="homemenu" class="nav-link" aria-current="page" href="#home">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a id="about" class="nav-link" href="pages/aboutMe.html">Acerca de</a>
-              </li>
-              <li class="nav-item">
-                <a id="projects" class="nav-link" href="#projects">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a id="contact" class="nav-link" href="#contact">Contactame</a>
-              </li>
-            </ul>
-          </div>
+
+<body>
+  <nav class="navbar navbar-dark bg-black fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo" src="images/dh.png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas text-bg-dark canva" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 id="textmenu" class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            Explorar mas
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <select id="languageSelector" class="form-select w-auto mx-auto">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+              <option value="it">Italiano</option>
+              <option value="fr">French</option>
+            </select>
+            <li class="nav-item">
+              <a id="homemenu" class="nav-link" aria-current="page" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a id="about" class="nav-link" href="pages/aboutMe.html">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a id="projects" class="nav-link" href="#projects">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a id="contact" class="nav-link" href="#contact">Contactame</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Section information -->
-    <section class="intro" id="home" data-aos="fade-up">
-      <div class="container">
-        <video autoplay loop muted>
-          <source src="media/fondo.mp4" type="video/mp4" />
-          Tu navegador no soporta el formato de video.
-        </video>
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="text-info">
-              <h1 id="titleinfo" class="text-withe">
-                DESARROLLADORA <br />
-                JUNIOR FULL STACK
-              </h1>
-              <h4 id="shortd">"Cada error es un paso firme hacia el triunfo."</h4>
-            </div>
-          </div>
-          <div class="col-12 col-md-6" style="text-align: center">
-            <img class="profile img-fluid" src="images/dayana.jpg.jpg" alt="" />
-            <h2 id="checkcv" class="text-withe">Revisa mi CV</h2>
-            <br>
-            <a onclick="saveData()" id="download" class="btn-download" href="media/DOC-20241106-WA0039..pdf" download="MiPortafolio.pdf">Descargar</a>
+  <!-- Section information -->
+  <section class="intro" id="home" data-aos="fade-up">
+    <div class="container">
+      <video autoplay loop muted>
+        <source src="media/fondo.mp4" type="video/mp4" />
+        Tu navegador no soporta el formato de video.
+      </video>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="text-info">
+            <h1 id="titleinfo" class="text-withe">
+              DESARROLLADORA <br />
+              JUNIOR FULL STACK
+            </h1>
+            <h4 id="shortd">"Cada error es un paso firme hacia el triunfo."</h4>
           </div>
         </div>
-       
+        <div class="col-12 col-md-6" style="text-align: center">
+          <img class="profile img-fluid" src="images/dayana.jpg.jpg" alt="" />
+          <h2 id="checkcv" class="text-withe">Revisa mi CV</h2>
+          <br>
+          <a onclick="saveData()" id="download" class="btn-download" href="media/DOC-20241106-WA0039..pdf"
+            download="MiPortafolio.pdf">Descargar</a>
+        </div>
       </div>
-    </section>
 
-    <!-- seccion acerca de mi -->
+    </div>
+  </section>
+
+  <!-- seccion acerca de mi -->
   <section class="brv-aboutme" id="brv-aboutme" data-aos="fade-up">
     <div class="container">
       <div class="info">
         <h1 id="about">ACERCA DE MI</h1>
-        <h4 id="description1" style="color: white">Soy desarrolladora web con experiencia 
-            en HTML, CSS, JavaScript y Bootstrap. Además, soy artista apasionada por
-            la danza, buscando fusionar el arte y la tecnología para
-            crear proyectos innovadores.</h4 >
-            <br>
-             <a  id="seemore" class="btn-seemore" href="pages/aboutMe.html">Ver más</a>
-       </div>
-  </div>
-</section>
-
-<!-- Sección de Proyectos -->
-<section class="projects" id="projects" data-aos="fade-up" style="background-color: black;">
-  <video autoplay loop muted>
-    <source src="../media/fondo.mp4" type="video/mp4" />
-    Tu navegador no soporta el formato de video.
-</video>
-  <div class="container">
-    <h1 class="text-center mb-5">Mis Proyectos</h1>
-    <div class="scroll-container">
-      <!-- Proyecto 1 -->
-      <div class="project-item">
-        <img src="images/MacBook Mockup, Floating.png" alt="Proyecto 1">
-        <h3>Título del Proyecto 1</h3>
-        <p>Breve descripción del proyecto 1. Funcionalidades innovadoras y diseño atractivo.</p>
-        <a href="proyecto1.html" class="btn btn-primary">Ver más</a>
-      </div>
-      <!-- Proyecto 2 -->
-      <div class="project-item">
-        <img src="images/MacBook Mockup, Floating (1).png" alt="Proyecto 2">
-        <h3>Título del Proyecto 2</h3>
-        <p>Breve descripción del proyecto 2. Desarrollado con las últimas tecnologías.</p>
-        <a href="proyecto2.html" class="btn btn-primary">Ver más</a>
-      </div>
-      <!-- Proyecto 3 -->
-      <div class="project-item">
-        <img src="images/MacBook Mockup, Floating (2).png" alt="Proyecto 3">
-        <h3>Título del Proyecto 3</h3>
-        <p>Breve descripción del proyecto 3. Un ejemplo perfecto de creatividad y tecnología.</p>
-        <a href="proyecto3.html" class="btn btn-primary">Ver más</a>
-      </div>
-       <!-- Proyecto 4-->
-       <div class="project-item">
-        <img src="images/MacBook Mockup, Floating.png" alt="Proyecto 4">
-        <h3>Título del Proyecto 4</h3>
-        <p>Breve descripción del proyecto 4. Un ejemplo perfecto de creatividad y tecnología.</p>
-        <a href="proyecto4.html" class="btn btn-primary">Ver más</a>
+        <h4 id="description1" style="color: white">Soy desarrolladora web con experiencia
+          en HTML, CSS, JavaScript y Bootstrap. Además, soy artista apasionada por
+          la danza, buscando fusionar el arte y la tecnología para
+          crear proyectos innovadores.</h4>
+        <br>
+        <a id="seemore" class="btn-seemore" href="pages/aboutMe.html">Ver más</a>
       </div>
     </div>
-</section>
+  </section>
 
-<!--
+  <!-- Sección de Proyectos -->
+  <section class="projects" id="projects" data-aos="fade-up" style="background-color: black;">
+    <video autoplay loop muted>
+      <source src="media/fondo.mp4" type="video/mp4" />
+      Tu navegador no soporta el formato de video.
+    </video>
+    <div class="container">
+      <h1 class="text-center mb-5" id="myprojects">Mis Proyectos</h1>
+      <div class="scroll-container">
+        <!-- Proyecto 1 -->
+        <div class="project-item">
+          <img src="images/MacBook Mockup, Floating.png" alt="Proyecto 1">
+          <h3 id="titleproject">HamburguerPlus</h3>
+          <p id="descriptionproject">Una página web creada con un enfoque minimalista y funcional, desarrollada exclusivamente con HTML y CSS puro.</p>
+          <a href="pages/hamburguer.html" id="seemore" class="btn  btn-dark">Ver más</a>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="project-item">
+          <img src="images/MacBook Mockup, Floating (1).png" alt="Proyecto 2">
+          <h3>Título del Proyecto 2</h3>
+          <p>Breve descripción del proyecto 2. Desarrollado con las últimas tecnologías.</p>
+          <a href="proyecto2.html" class="btn  btn-dark">Ver más</a>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="project-item">
+          <img src="images/MacBook Mockup, Floating (2).png" alt="Proyecto 3">
+          <h3>Título del Proyecto 3</h3>
+          <p>Breve descripción del proyecto 3. Un ejemplo perfecto de creatividad y tecnología.</p>
+          <a href="proyecto3.html" class="btn  btn-dark">Ver más</a>
+        </div>
+        <!-- Proyecto 4-->
+        <div class="project-item">
+          <img src="images/MacBook Mockup, Floating.png" alt="Proyecto 4">
+          <h3>Título del Proyecto 4</h3>
+          <p>Breve descripción del proyecto 4. Un ejemplo perfecto de creatividad y tecnología.</p>
+          <a href="proyecto4.html" class="btn  btn-dark">Ver más</a>
+        </div>
+      </div>
+  </section>
+
+  <!--
 <section class="parallax-container"  id="projects" data-aos="fade-up">
   <div class="content">
   </div>
 </section>
 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="js/app.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-  </body>
+<script> document.addEventListener("DOMContentLoaded", function() {
+  AOS.init({
+    duration: 1000, // Duración de la animación
+    easing: "ease", // Suavizado
+    once: true,     // Animación una sola vez
+  });
+});
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
 </html>
