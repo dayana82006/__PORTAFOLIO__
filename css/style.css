@@ -95,16 +95,17 @@ video {
 }
 
 .profile {
-  width: 25vw;
+  width: 26vw;
   min-width: 200px;
   height: auto;
   border-radius: 50%;
-  box-shadow: 2px 2px 8px rgba(68, 68, 68, 0.164);
+  box-shadow: 2px 2px 8px rgba(114, 113, 113, 0.514);
   margin: 20px;
+  
 }
 
 .profile:hover {
-  box-shadow: 1px 1px 10px rgba(73, 71, 100, 0.295);
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.411);
 }
 
 .canva {
