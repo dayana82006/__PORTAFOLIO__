@@ -1,5 +1,5 @@
 
-# 🎨 **Portafolio Web de Dayana Hernández** 🚀
+# 🎨 **Portafolio Web de Dayana Hernández** 🚀 https://portafoliodayana.netlify.app/
 
 
 ¡Bienvenido a mi proyecto! Este repositorio contiene un **portafolio web** creado con **HTML, CSS, JavaScript** y el framework **Bootstrap**. Es un espacio donde muestro mis habilidades, proyectos y pasión por el desarrollo y la creatividad.  
@@ -35,9 +35,17 @@ Desarrollar un **portafolio web dinámico y responsivo** que permita:
   Aquí te muestro algunas capturas de pantalla de mi portafolio:
 
 1. **Vista en dispositivos móviles:**
+
+
 ![image](https://github.com/user-attachments/assets/55fcc87c-9ca6-4c97-8789-f0fb560ac26b)
 
+
+
+
 2. **Vista en escritorio:**
+
+
+
 ![image](https://github.com/user-attachments/assets/1bc39e64-c668-4205-91d4-d38967f897d7)
 
 
