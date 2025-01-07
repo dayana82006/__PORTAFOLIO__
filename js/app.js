@@ -2,6 +2,8 @@
   const translations = {
     en: {
         textmenu: "Explore More",
+        tech: "Technologies",
+        feat: "Features",
         homemenu: "Home",
         about: "About Me",
         projects: "Projects",
@@ -41,16 +43,20 @@
         dscvisual: "It is a text editor designed to program efficiently.",
         bencr: "Benefits and Features",
         interfaz: "Intuitive Interface",
-        dscinterfaz: "It works perfectly on desktop devices, ensuring a fast and smooth experience.",
+        dscinterfaz: "Hamburguer Plus features a simple interface for customizing burgers and placing orders quickly and easily.",
         opt: "PC Optimization",
         dscopt: "The site is optimized for desktop devices, ensuring smooth navigation and a design adapted to large screens.",
         idm: "Languages I Practice",
-        copy: "2025 Dayana Hernández - All rights reserved."
-
-
+        copy: "2025 Dayana Hernández - All rights reserved.",
+        descriptionimc: "This project is a Body Mass Index (BMI) calculator developed using only HTML, pure CSS, and JavaScript. The application is simple, interactive, and functional, designed for users to quickly calculate their BMI and understand their health range based on their weight and height.",
+        dscJs: "Logic for performing BMI calculations, input validations, and updates.",
+        dscinterfazimc: "The BMI project has a simple and clear interface that facilitates the calculation and visualization of the body mass index.",
+        descriptionBrvImc : "The project is a BMI calculator developed with HTML, CSS, and JavaScript, allowing the user to calculate their BMI and understand their health status.",
     },
     es: {
         textmenu: "Explorar Más",
+        tech : "Tecnologias",
+        feat : "Caracteristicas",
         homemenu: "Inicio",
         about: "Acerca De Mí",
         projects: "Proyectos",
@@ -91,14 +97,20 @@
         dscvisual : "Es un editor de texto diseñado para programar de manera eficiente.",
         bencr : "Beneficios y Características",
         interfaz : "Interfaz Intuitiva",
-        dscinterfaz : "Funciona perfectamente en dispositivos de escritorio, garantizando una experiencia rápida y fluida.",
+        dscinterfaz : "Hamburguer Plus tiene una interfaz simple que permite personalizar hamburguesas y realizar pedidos de forma rápida y fácil.",
         opt : "Optimización de pc",
         dscopt : "El sitio está optimizado para dispositivos de escritorio, garantizando una navegación fluida y un diseño adaptado a pantallas grandes.",
-        copy : "2025 Dayana Hernández - Todos los derechos reservados."
-        
+        copy : "2025 Dayana Hernández - Todos los derechos reservados.",
+        descriptionimc : " Este proyecto es una calculadora de Índice de Masa Corporal (IMC) desarrollada utilizando únicamente HTML, CSS puro y JavaScript. La aplicación es sencilla, interactiva y funcional, diseñada para que el usuario pueda calcular su IMC de manera rápida y entender en qué rango de salud se encuentra según su peso y altura.",
+        dscJs : "Lógica para realizar los cálculos del IMC, validaciones de entrada y actualización.",
+        dscinterfazimc : "El proyecto IMC tiene una interfaz simple y clara que facilita el cálculo y visualización del índice de masa corporal.",
+        descriptionBrvImc : "El proyecto es una calculadora de IMC desarrollada con HTML, CSS y JavaScript, que permite al usuario calcular su IMC y conocer su estado de salud.",
     },
     it: {
+
         textmenu: "Esplora di Più",
+        tech: "Tecnologie",
+        feat: "Caratteristiche",
         homemenu: "Home",
         about: "Chi Sono",
         projects: "Progetti",
@@ -139,14 +151,19 @@
         dscvisual: "È un editor di testo progettato per programmare in modo efficiente.",
         bencr: "Benefici e Caratteristiche",
         interfaz: "Interfaccia Intuitiva",
-        dscinterfaz: "Funziona perfettamente sui dispositivi desktop, garantendo un'esperienza veloce e fluida.",
+        dscinterfaz: "Hamburguer Plus offre un'interfaccia semplice per personalizzare gli hamburger e effettuare ordini in modo rapido e facile.",
         opt: "Ottimizzazione per PC",
         dscopt: "Il sito è ottimizzato per dispositivi desktop, garantendo una navigazione fluida e un design adattato a schermi grandi.",
-        copy: "2025 Dayana Hernández - Tutti i diritti riservati."
-        
-        },
+        copy: "2025 Dayana Hernández - Tutti i diritti riservati.",
+        descriptionimc: "Questo progetto è una calcolatrice dell'Indice di Massa Corporea (IMC) sviluppata utilizzando solo HTML, CSS puro e JavaScript. L'applicazione è semplice, interattiva e funzionale, progettata per consentire all'utente di calcolare rapidamente il proprio IMC e capire in quale intervallo di salute si trova in base al proprio peso e altezza.",
+        dscJs: "Logica per eseguire i calcoli dell'IMC, convalidare gli input e aggiornare.",
+        dscinterfazimc: "Il progetto IMC ha un'interfaccia semplice e chiara che facilita il calcolo e la visualizzazione dell'indice di massa corporea.",    
+        descriptionBrvImc : "Il progetto è una calcolatrice dell'IMC sviluppata con HTML, CSS e JavaScript, che permette all'utente di calcolare il proprio IMC e conoscere il proprio stato di salute.",    
+    },
     fr: {
         textmenu: "Explorer Plus",
+        tech: "Technologies",
+        feat: "Caractéristiques",
         homemenu: "Accueil",
         about: "À Propos de Moi",
         projects: "Projets",
@@ -187,11 +204,14 @@
         dscvisual: "C'est un éditeur de texte conçu pour programmer efficacement.",
         bencr: "Avantages et Caractéristiques",
         interfaz: "Interface Intuitive",
-        dscinterfaz: "Il fonctionne parfaitement sur les appareils de bureau, garantissant une expérience rapide et fluide.",
+        dscinterfaz: "Hamburguer Plus propose une interface simple pour personnaliser les hamburgers et passer des commandes rapidement et facilement.",
         opt: "Optimisation pour PC",
         dscopt: "Le site est optimisé pour les appareils de bureau, garantissant une navigation fluide et un design adapté aux grands écrans.",
-        copy: "2025 Dayana Hernández - Tous droits réservés."
-
+        copy: "2025 Dayana Hernández - Tous droits réservés.",
+        descriptionimc: "Ce projet est une calculatrice d'Indice de Masse Corporelle (IMC) développée en utilisant uniquement HTML, CSS pur et JavaScript. L'application est simple, interactive et fonctionnelle, conçue pour permettre à l'utilisateur de calculer rapidement son IMC et de comprendre dans quelle tranche de santé il se situe en fonction de son poids et de sa taille.",
+        dscJs: "Logique pour effectuer les calculs de l'IMC, les validations des entrées et les mises à jour.",
+        dscinterfazimc: "Le projet IMC dispose d'une interface simple et claire qui facilite le calcul et la visualisation de l'indice de masse corporelle.",
+        descriptionBrvImc : "Le projet est une calculatrice de l'IMC développée avec HTML, CSS et JavaScript, permettant à l'utilisateur de calculer son IMC et de connaître son état de santé.",
         },
         
     
@@ -201,7 +221,7 @@
   const nonTranslatableIds = [
      'offcanvasDarkNavbar',
       'languageSelector',
-      'projects',
+      'projectsS',
       'features',
       'technologies',
       'footer'
