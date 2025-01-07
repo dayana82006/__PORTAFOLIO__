@@ -1,6 +1,8 @@
-
+  
   const translations = {
     en: {
+        personalinf: "Personal Info",
+        myhistory: "My History",
         textmenu: "Explore More",
         tech: "Technologies",
         feat: "Features",
@@ -56,6 +58,8 @@
         descriptionBrvConcerts : "Connected Concerts is a platform that allows users to discover and purchase tickets for live events, such as concerts and shows, easily and quickly.",
     },
     es: {
+        personalinf : "Inf Perrsonal",
+        myhistory : "Mi Historia",
         textmenu: "Explorar Más",
         tech : "Tecnologias",
         feat : "Caracteristicas",
@@ -112,7 +116,8 @@
         desinterfazconcert : "Connected Concerts tiene una interfaz simple y clara que facilita el cálculo y visualización del índice de masa corporal."
     },
     it: {
-
+        personalinf: "Informazioni Personali",
+        myhistory: "La Mia Storia",
         textmenu: "Esplora di Più",
         tech: "Tecnologie",
         feat: "Caratteristiche",
@@ -168,6 +173,8 @@
         descriptionBrvConcerts : "Connected Concerts è una piattaforma che consente di scoprire e acquistare biglietti per eventi dal vivo, come concerti e spettacoli, in modo facile e veloce.",
     },
     fr: {
+        personalinf: "Informations Personnelles",
+        myhistory: "Mon Histoire",
         textmenu: "Explorer Plus",
         tech: "Technologies",
         feat: "Caractéristiques",
@@ -266,7 +273,7 @@
 
   
 function saveData() {
-    // Simular una acción de guardado (puedes reemplazar esto con tu lógica real)
+   
     const isSaved = true; // Aquí se simula que los datos fueron guardados exitosamente
 
     if (isSaved) {

@@ -2,79 +2,81 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DayanaHdz</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-  <!-- Favicon-->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Configuración básica del documento -->
+  <meta charset="UTF-8" /> <!-- Codificación de caracteres UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Diseño responsivo -->
+  <title>DayanaHdz</title> <!-- Título de la página -->
 
+  <!-- Archivos CSS -->
+  <link rel="stylesheet" href="css/style.css" /> <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" /> <!-- Animaciones con AOS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /> <!-- Estilos de Bootstrap -->
+
+  <!-- Favicon de la página -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Font Awesome para íconos -->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <!-- Navegación -->
   <nav class="navbar navbar-dark bg-black fixed-top">
     <div class="container-fluid">
+      <!-- Logo -->
       <a class="navbar-brand" href="#"><img class="logo" src="images/dh.png" alt="" /></a>
+      <!-- Botón para menú desplegable -->
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Menú lateral -->
       <div class="offcanvas text-bg-dark canva" tabindex="-1" id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
-          <h5 id="textmenu" class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-            Explorar mas
-          </h5>
+          <h5 id="textmenu" class="offcanvas-title" id="offcanvasDarkNavbarLabel">Explorar más</h5>
+          <!-- Botón para cerrar el menú -->
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
         </div>
+        <!-- Opciones del menú -->
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <!-- Selector de idioma -->
             <select id="languageSelector" class="form-select w-auto mx-auto">
               <option value="es">Español</option>
               <option value="en">English</option>
               <option value="it">Italiano</option>
               <option value="fr">French</option>
             </select>
-            <li class="nav-item">
-              <a id="homemenu" class="nav-link" aria-current="page" href="#home">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a id="about" class="nav-link" href="pages/aboutMe.html">Acerca de</a>
-            </li>
-            <li class="nav-item">
-              <a id="projects" class="nav-link" href="#projectsS">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a id="contact" class="nav-link" href="#contactS">Contactame</a>
-            </li>
+            <!-- Enlaces del menú -->
+            <li class="nav-item"><a id="homemenu" class="nav-link" aria-current="page" href="#home">Inicio</a></li>
+            <li class="nav-item"><a id="about" class="nav-link" href="pages/aboutMe.html">Acerca de</a></li>
+            <li class="nav-item"><a id="projects" class="nav-link" href="#projectsS">Proyectos</a></li>
+            <li class="nav-item"><a id="contact" class="nav-link" href="#contactS">Contáctame</a></li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Section information -->
+  <!-- Sección de introducción -->
   <section class="intro" id="home" data-aos="fade-up">
     <div class="container">
+      <!-- Video de fondo -->
       <video autoplay loop muted>
         <source src="media/fondo.mp4" type="video/mp4" />
         Tu navegador no soporta el formato de video.
       </video>
       <div class="row">
+        <!-- Información principal -->
         <div class="col-12 col-md-6">
           <div class="text-info">
-            <h1 id="titleinfo" class="text-withe">
-              DESARROLLADORA <br />
-              JUNIOR FULL STACK
-            </h1>
+            <h1 id="titleinfo" class="text-withe">DESARROLLADORA <br /> JUNIOR FULL STACK</h1>
             <h4 id="shortd">"Cada error es un paso firme hacia el triunfo."</h4>
           </div>
         </div>
+        <!-- Imagen de perfil y botón de descarga -->
         <div class="col-12 col-md-6" style="text-align: center">
           <img class="profile img-fluid" src="images/fotoPerfilB&N.jpg" alt="" />
           <h2 id="checkcv" class="text-withe">Revisa mi CV</h2>
@@ -83,26 +85,25 @@
             download="MiPortafolio.pdf">Descargar</a>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- seccion acerca de mi -->
+  <!-- Sección "Acerca de mí" -->
   <section class="brv-aboutme" id="brv-aboutme" data-aos="fade-up">
     <div class="container">
       <div class="info">
         <h1 id="about">ACERCA DE MI</h1>
-        <h4 id="description1" style="color: white">Soy desarrolladora web con experiencia
-          en HTML, CSS, JavaScript y Bootstrap. Además, soy artista apasionada por
-          la danza, buscando fusionar el arte y la tecnología para
-          crear proyectos innovadores.</h4>
+        <h4 id="description1" style="color: white">
+          Soy desarrolladora web con experiencia en HTML, CSS, JavaScript y Bootstrap. Además, soy artista apasionada por
+          la danza, buscando fusionar el arte y la tecnología para crear proyectos innovadores.
+        </h4>
         <br>
         <a id="seemore" class="btn-seemore" href="pages/aboutMe.html">Ver más</a>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Proyectos -->
+  <!-- Sección de proyectos -->
   <section class="projects" id="projectsS" data-aos="fade-up" style="background-color: black;">
     <video autoplay loop muted>
       <source src="media/fondo.mp4" type="video/mp4" />
@@ -116,93 +117,73 @@
           <img src="images/MacBook Mockup, Floating.png" alt="Proyecto 1">
           <h3 id="titleproject">HamburguerPlus</h3>
           <p id="descriptionproject">Una página web creada con un enfoque minimalista y funcional, desarrollada exclusivamente con HTML y CSS puro.</p>
-          <a href="pages/hamburguer.html" id="seemore" class="btn  btn-dark">Ver más</a>
+          <a href="pages/hamburguer.html" id="seemore" class="btn btn-dark">Ver más</a>
         </div>
         <!-- Proyecto 2 -->
         <div class="project-item">
           <img src="images/MacBook Mockup, Floating (1).png" alt="Proyecto 2">
           <h3>Connected Concerts</h3>
           <p>Es una plataforma que permite descubrir y comprar boletos para eventos en vivo, como conciertos y espectáculos, de manera fácil y rápida.</p>
-          <a href="pages/concert.html" class="btn  btn-dark">Ver más</a>
+          <a href="pages/concert.html" class="btn btn-dark">Ver más</a>
         </div>
         <!-- Proyecto 3 -->
         <div class="project-item">
           <img src="images/MacBook Mockup, Floating (2).png" alt="Proyecto 3">
           <h3>Calculator IMC</h3>
           <p id="descriptionBrvImc">El proyecto es una calculadora de IMC desarrollada con HTML, CSS y JavaScript, que permite al usuario calcular su IMC y conocer su estado de salud.</p>
-          <a href="pages/imc.html" class="btn  btn-dark">Ver más</a>
+          <a href="pages/imc.html" class="btn btn-dark">Ver más</a>
         </div>
-        <!-- 
-        Proyecto 4
-        <div class="project-item">
-          <img src="images/MacBook Mockup, Floating.png" alt="Proyecto 4">
-          <h3>Título</h3>
-          <p> Un ejemplo perfecto de creatividad y tecnología.</p>
-          <a href="proyecto4.html" class="btn  btn-dark">Ver más</a>
-        </div>
-        -->
       </div>
+    </div>
   </section>
-   <!-- Footer -->   
-   <footer id="contactS" data-aos="fade-up">
+
+  <!-- Footer -->
+  <footer id="contactS" data-aos="fade-up">
     <div class="container">
       <div class="contactme">
-          <h2 id="textcontactme" class="mb-4 text-withe">Contactame</h2>
-          <div class="row contact-icons">
-              <!-- Instagram -->
-              <div class="col-12 col-md-3 contact-item">
-                  <a href="https://www.instagram.com/dayana_08h?utm_source=qr" target="_blank" class="text-white">
-                      <i class="fab fa-instagram"></i>
-                      <p>Instagram</p>
-                  </a>
-              </div>
-
-              <!-- Teléfono -->
-              <div class="col-12 col-md-3 contact-item">
-                  <a href="tel:+57 3125006423" class="text-white">
-                      <i class="fas fa-phone-alt"></i>
-                      <p>+57 3125006423</p>
-                  </a>
-              </div>
-
-              <!-- GitHub -->
-              <div class="col-12 col-md-3 contact-item">
-                  <a href="https://github.com/dayana82006" target="_blank" class="text-white">
-                      <i class="fab fa-github"></i>
-                      <p>GitHub</p>
-                  </a>
-              </div>
-
-              <!-- LinkedIn -->
-              <div class="col-12 col-md-3 contact-item">
-                  <a href="https://www.linkedin.com/in/dayana-hern%C3%A1ndez-58531a263/" target="_blank"
-                      class="text-white">
-                      <i class="fab fa-linkedin"></i>
-                      <p>LinkedIn</p>
-                  </a>
-              </div>
-
-              <p>&copy;<p id="copy"> 2024 Dayana Hernández - Todos los derechos reservados.</p></p>
-
+        <h2 id="textcontactme" class="mb-4 text-withe">Contáctame</h2>
+        <div class="row contact-icons">
+          <!-- Íconos de contacto -->
+          <div class="col-12 col-md-3 contact-item">
+            <a href="https://www.instagram.com/dayana_08h?utm_source=qr" target="_blank" class="text-white">
+              <i class="fab fa-instagram"></i>
+              <p>Instagram</p>
+            </a>
           </div>
+          <div class="col-12 col-md-3 contact-item">
+            <a href="tel:+57 3125006423" class="text-white">
+              <i class="fas fa-phone-alt"></i>
+              <p>+57 3125006423</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-3 contact-item">
+            <a href="https://github.com/dayana82006" target="_blank" class="text-white">
+              <i class="fab fa-github"></i>
+              <p>GitHub</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-3 contact-item">
+            <a href="https://www.linkedin.com/in/dayana-hern%C3%A1ndez-58531a263/" target="_blank" class="text-white">
+              <i class="fab fa-linkedin"></i>
+              <p>LinkedIn</p>
+            </a>
+          </div>
+          <p>&copy;<p id="copy"> 2024 Dayana Hernández - Todos los derechos reservados.</p></p>
+        </div>
       </div>
-  </div>
+    </div>
+  </footer>
 
-</footer>
-
-  <!--
-<section class="parallax-container"  id="projects" data-aos="fade-up">
-  <div class="content">
-  </div>
-</section>
--->
-<script> document.addEventListener("DOMContentLoaded", function() {
-  AOS.init({
-    duration: 1000, // Duración de la animación
-    easing: "ease", // Suavizado
-    once: true,     // Animación una sola vez
-  });
-});
+  <!-- Scripts -->
+  <script>
+    // Inicialización de AOS (animaciones)
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 1000, // Duración de la animación
+        easing: "ease", // Suavizado
+        once: true, // Animación una sola vez
+      });
+    });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

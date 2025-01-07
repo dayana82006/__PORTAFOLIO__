@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta etiquetas para definir el charset y la visualización en dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlaces a hojas de estilo externas -->
     <link rel="stylesheet" href="../css/proyectos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Título de la página -->
     <title>Proyectos</title>
 </head>
 <body>
-  <!-- Navbar --> <nav class="navbar navbar-dark bg-black fixed-top">
+
+  <!-- Barra de navegación (Navbar) -->
+  <nav class="navbar navbar-dark bg-black fixed-top">
     <div class="container-fluid">
+      <!-- Logo en la navbar -->
       <a class="navbar-brand" href="#"><img class="logo" src="../images/dh.png" alt="" /></a>
+
+      <!-- Botón para abrir el menú lateral en dispositivos pequeños -->
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Menú lateral (offcanvas) -->
       <div class="offcanvas text-bg-dark canva" tabindex="-1" id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
@@ -28,7 +40,9 @@
             aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
+          <!-- Lista de navegación dentro del menú lateral -->
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <!-- Selector de idioma -->
             <select id="languageSelector" class="form-select w-auto mx-auto">
               <option value="es">Español</option>
               <option value="en">English</option>
@@ -52,15 +66,19 @@
       </div>
     </div>
   </nav>
-  <!-- Projects Section -->
+
+  <!-- Sección de Proyectos -->
   <section id="projectsS" class="py-5" data-aos="fade-up">
     <div class="container container2">
       <article data-aos="fade-up">
+        <!-- Título del proyecto -->
         <h1 class="section-header2 title">CALCULATOR IMC</h1>
 
+        <!-- Imágenes del proyecto en dispositivos móviles y de escritorio -->
         <img class="img-fluid d-block d-md-none img-proyecto-iphone" src="../images/iPhone 15 Mockup, Perspective.png" alt="Hamburguer Plus">
         <img class="img-proyecto img-fluid d-none d-md-block" src="../images/imc.png" alt="CalculatorImc">
 
+        <!-- Descripción del proyecto -->
         <p class="mt-4" style="padding: 20px;" id="descriptionimc">
             Este proyecto es una calculadora de Índice de Masa Corporal (IMC) desarrollada utilizando únicamente HTML, CSS puro y JavaScript. La aplicación es sencilla, interactiva y funcional, diseñada para que el usuario pueda calcular su IMC de manera rápida y entender en qué rango de salud se encuentra según su peso y altura.</p>
         <hr>
@@ -68,11 +86,12 @@
     </div>
   </section>
 
-  <!-- Technologies Section -->
+  <!-- Sección de Tecnologías utilizadas -->
   <section id="technologies"  class="parallax-container py-5">
     <div class="container content">
       <h2 class="section-header title" id="tcu">Tecnologías utilizadas</h2>
       <div class="row">
+        <!-- Tarjetas de tecnologías -->
         <div class="col-12 col-md-3">
           <div class="card card-custom" data-aos="fade-up" data-aos-delay="200">
             <div class="card-body">
@@ -104,7 +123,7 @@
     </div>
   </section>
 
-  <!-- Features Section -->
+  <!-- Sección de Beneficios y Características -->
   <section id="features" class="py-5">
     <div class="container">
       <h3 class="section-header title" id="bencr">Beneficios y Características</h3>
@@ -130,56 +149,52 @@
       </div>
     </div>
   </section>
+
+  <!-- Sección de Contacto -->
   <footer id="contactS" data-aos="fade-up">
+    <!-- Video de fondo -->
     <video style="height: 100%;" autoplay loop muted>
       <source src="../media/fondo.mp4" type="video/mp4" />
       Tu navegador no soporta el formato de video.
     </video>
-        <div class="container">
-          <div class="contactme">
-              <h2 id="textcontactme" class="mb-4 text-withe">Contactame</h2>
-              <div class="row contact-icons">
-                  <!-- Instagram -->
-                  <div class="col-12 col-md-3 contact-item">
-                      <a href="https://www.instagram.com/dayana_08h?utm_source=qr" target="_blank" class="text-white">
-                          <i class="fab fa-instagram"></i>
-                          <p>Instagram</p>
-                      </a>
-                  </div>
-
-                  <!-- Teléfono -->
-                  <div class="col-12 col-md-3 contact-item">
-                      <a href="tel:+57 3125006423" class="text-white">
-                          <i class="fas fa-phone-alt"></i>
-                          <p>+57 3125006423</p>
-                      </a>
-                  </div>
-
-                  <!-- GitHub -->
-                  <div class="col-12 col-md-3 contact-item">
-                      <a href="https://github.com/dayana82006" target="_blank" class="text-white">
-                          <i class="fab fa-github"></i>
-                          <p>GitHub</p>
-                      </a>
-                  </div>
-
-                  <!-- LinkedIn -->
-                  <div class="col-12 col-md-3 contact-item">
-                      <a href="https://www.linkedin.com/in/dayana-hern%C3%A1ndez-58531a263/" target="_blank"
-                          class="text-white">
-                          <i class="fab fa-linkedin"></i>
-                          <p>LinkedIn</p>
-                      </a>
-                  </div>
-
-                  <p>&copy;<p id="copy"> 2024 Dayana Hernández - Todos los derechos reservados.</p></p>
-
+    
+    <div class="container">
+      <div class="contactme">
+          <h2 id="textcontactme" class="mb-4 text-withe">Contactame</h2>
+          <div class="row contact-icons">
+              <!-- Redes sociales y contacto -->
+              <div class="col-12 col-md-3 contact-item">
+                  <a href="https://www.instagram.com/dayana_08h?utm_source=qr" target="_blank" class="text-white">
+                      <i class="fab fa-instagram"></i>
+                      <p>Instagram</p>
+                  </a>
               </div>
+              <div class="col-12 col-md-3 contact-item">
+                  <a href="tel:+57 3125006423" class="text-white">
+                      <i class="fas fa-phone-alt"></i>
+                      <p>+57 3125006423</p>
+                  </a>
+              </div>
+              <div class="col-12 col-md-3 contact-item">
+                  <a href="https://github.com/dayana82006" target="_blank" class="text-white">
+                      <i class="fab fa-github"></i>
+                      <p>GitHub</p>
+                  </a>
+              </div>
+              <div class="col-12 col-md-3 contact-item">
+                  <a href="https://www.linkedin.com/in/dayana-hern%C3%A1ndez-58531a263/" target="_blank"
+                      class="text-white">
+                      <i class="fab fa-linkedin"></i>
+                      <p>LinkedIn</p>
+                  </a>
+              </div>
+              <p>&copy;<p id="copy"> 2024 Dayana Hernández - Todos los derechos reservados.</p></p>
           </div>
       </div>
-
+  </div>
   </footer>
-  </section>
+
+  <!-- Scripts -->
   <script src="../js/app.js"></script>
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
   <script src="../bootstrap/js/bootstrap.min.js"></script>
