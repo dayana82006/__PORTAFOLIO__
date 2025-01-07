@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta información para la codificación y la vista responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Enlaces a hojas de estilo CSS -->
+    <link rel="stylesheet" href="../css/proyectos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Título de la página -->
+    <title>Proyectos</title>
+</head>
+<body>
+  <!-- Barra de navegación (Navbar) -->
+  <nav class="navbar navbar-dark bg-black fixed-top">
+    <div class="container-fluid">
+      <!-- Logo de la página con un enlace de vuelta al inicio -->
+      <a class="navbar-brand" href="#"><img class="logo" src="../images/dh.png" alt="" /></a>
+      
+      <!-- Botón para abrir el menú en dispositivos móviles -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Menú desplegable (Offcanvas) -->
+      <div class="offcanvas text-bg-dark canva" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <!-- Título del menú desplegable -->
+          <h5 id="textmenu" class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            Explorar mas
+          </h5>
+          <!-- Botón de cierre del menú -->
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <!-- Selector de idioma -->
+            <select id="languageSelector" class="form-select w-auto mx-auto">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+              <option value="it">Italiano</option>
+              <option value="fr">French</option>
+            </select>
+            <!-- Enlaces a otras secciones de la página -->
+            <li class="nav-item">
+              <a id="homemenu" class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a id="tech" class="nav-link" href="#technologies">Tecnologias </a>
+            </li>
+            <li class="nav-item">
+              <a id="feat" class="nav-link" href="#features">Caracteristicas</a>
+            </li>
+            <li class="nav-item">
+              <a id="contact" class="nav-link" href="#contact">Contactame</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de proyectos -->
+  <section id="projectsS" class="py-5" data-aos="fade-up">
+    <div class="container container2">
+      <article data-aos="fade-up">
+        <!-- Título del proyecto -->
+        <h1 class="section-header2 title">HAMBURGUER PLUS</h1>
+        <!-- Imagen del proyecto -->
+        <img class="img-proyecto" src="../images/hamburguer.png" alt="Hamburguer Plus">
+        <!-- Descripción del proyecto -->
+        <p class="mt-4" style="padding: 20px;" id="descriptionp1">
+          Hamburguer Plus es una página web creada con un enfoque minimalista y
+          funcional, desarrollada exclusivamente con HTML y CSS puro. Este proyecto 
+          busca destacar la importancia de los fundamentos en el desarrollo web,
+          mostrando cómo se puede lograr un diseño atractivo y funcional sin 
+          depender de frameworks o herramientas externas.  
+        </p>
+        <hr>
+      </article>
+    </div>
+  </section>
+
+  <!-- Sección de tecnologías utilizadas -->
+  <section id="technologies"  class="parallax-container py-5">
+    <div class="container content">
+      <h2 class="section-header title" id="tcu">Tecnologías utilizadas</h2>
+      <div class="row">
+        <!-- Tarjetas para cada tecnología -->
+        <div class="col-12 col-md-3">
+          <div class="card card-custom" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-body">
+              <i class="devicon-html5-plain card-icon" style="color: #ca4e1d;"></i>
+              <h5>HTML</h5>
+              <p id="dschtml">Es el lenguaje de marcado que estructura y define el contenido de una página web</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card card-custom" data-aos="fade-up" data-aos-delay="220">
+            <div class="card-body">
+              <i class="devicon-css3-plain card-icon" style="color: #1230b6;"></i>
+              <h5>CSS</h5>
+              <p id="dsccss">CSS es el lenguaje que se encarga de la apariencia y el diseño de una página web.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card card-custom" data-aos="fade-up" data-aos-delay="240">
+            <div class="card-body">
+              <i class="devicon-visualstudio-plain card-icon" style="color: #642d91;"></i>
+              <h5>VisualStudio</h5>
+              <p id="dscvisual">Es un editor de texto diseñado para programar de manera eficiente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de características -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <h3 class="section-header title" id="bencr">Beneficios y Características</h3>
+      <div class="row">
+        <!-- Tarjetas para las características -->
+        <div class="col-12 col-md-4">
+          <div class="card card-custom" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-body">
+              <i class="fas fa-users card-icon"></i>
+              <h5 id="interfaz">Interfaz Intuitiva</h5>
+              <p id="dscinterfaz">Hamburguer Plus tiene una interfaz simple que permite personalizar hamburguesas y realizar pedidos de forma rápida y fácil.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card card-custom" data-aos="fade-up" data-aos-delay="420">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt card-icon"></i>
+              <h5 id="opt">Optimización en pc</h5>
+              <p id="dscopt">El sitio está optimizado para dispositivos de escritorio, garantizando una navegación fluida y un diseño adaptado a pantallas grandes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página con información de contacto -->
+   <footer id="contactS" data-aos="fade-up">
+    <!-- Video de fondo -->
+    <video style="height: 100%;" autoplay loop muted>
+      <source src="../media/fondo.mp4" type="video/mp4" />
+      Tu navegador no soporta el formato de video.
+    </video>
+    <div class="container">
+      <div class="contactme">
+        <h2 id="textcontactme" class="mb-4 text-withe">Contactame</h2>
+        <div class="row contact-icons">
+          <!-- Enlaces a redes sociales y contacto -->
+          <div class="col-12 col-md-3 contact-item">
+            <a href="https://www.instagram.com/dayana_08h?utm_source=qr" target="_blank" class="text-white">
+              <i class="fab fa-instagram"></i>
+              <p>Instagram</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-3 contact-item">
+            <a href="tel:+57 3125006423" class="text-white">
+              <i class="fas fa-phone-alt"></i>
+              <p>+57 3125006423</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-3 contact-item">
+            <a href="https://github.com/dayana82006" target="_blank" class="text-white">
+              <i class="fab fa-github"></i>
+              <p>GitHub</p>
+            </a>
+          </div>
+          <div class="col-12 col-md-3 contact-item">
+            <a href="https://www.linkedin.com/in/dayana-hern%C3%A1ndez-58531a263/" target="_blank"
+                class="text-white">
+              <i class="fab fa-linkedin"></i>
+              <p>LinkedIn</p>
+            </a>
+          </div>
+          <!-- Copyright -->
+          <p>&copy;<p id="copy"> 2024 Dayana Hernández - Todos los derechos reservados.</p></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts necesarios para el funcionamiento de la página -->
+  <script src="../js/app.js"></script>
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Inicialización de AOS (Animaciones en el desplazamiento)
+    AOS.init({
+      duration: 1200, // Duración de la animación en milisegundos
+      easing: 'ease', // Tipo de transición
+      once: true, // Si debe ocurrir solo una vez
+    });
+  </script>
+</body>
+</html>
