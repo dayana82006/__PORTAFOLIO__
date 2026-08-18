@@ -1,194 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <!-- Configuración básica del documento -->
-  <meta charset="UTF-8" /> <!-- Codificación de caracteres UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Diseño responsivo -->
-  <title>DayanaHdz</title> <!-- Título de la página -->
-
-  <!-- Archivos CSS -->
-  <link rel="stylesheet" href="css/style.css" /> <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" /> <!-- Animaciones con AOS -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /> <!-- Estilos de Bootstrap -->
-
-  <!-- Favicon de la página -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-
-  <!-- Font Awesome para íconos -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dayana Hernández · Desarrolladora Full Stack</title>
+  <meta name="description" content="Portafolio de Dayana Hernández, desarrolladora junior full stack. HTML, CSS, JavaScript y Bootstrap, con una mirada artística." />
+  <link rel="icon" type="image/png" href="images/dh.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <!-- Navegación -->
-  <nav class="navbar navbar-dark bg-black fixed-top">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#"><img class="logo" src="images/dh.png" alt="" /></a>
-      <!-- Botón para menú desplegable -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Menú lateral -->
-      <div class="offcanvas text-bg-dark canva" tabindex="-1" id="offcanvasDarkNavbar"
-        aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 id="textmenu" class="offcanvas-title" id="offcanvasDarkNavbarLabel">Explorar más</h5>
-          <!-- Botón para cerrar el menú -->
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
-        </div>
-        <!-- Opciones del menú -->
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <!-- Selector de idioma -->
-            <select id="languageSelector" class="form-select w-auto mx-auto">
-              <option value="es">Español</option>
-              <option value="en">English</option>
-              <option value="it">Italiano</option>
-              <option value="fr">French</option>
-            </select>
-            <!-- Enlaces del menú -->
-            <li class="nav-item"><a id="homemenu" class="nav-link" aria-current="page" href="#home">Inicio</a></li>
-            <li class="nav-item"><a id="about" class="nav-link" href="pages/aboutMe.html">Acerca de</a></li>
-            <li class="nav-item"><a id="projects" class="nav-link" href="#projectsS">Proyectos</a></li>
-            <li class="nav-item"><a id="contact" class="nav-link" href="#contactS">Contáctame</a></li>
-          </ul>
-        </div>
-      </div>
+  <header class="site-header">
+    <a class="logo" href="#home"><img src="images/dh.png" alt="Dayana Hernández" /></a>
+    <nav class="nav-desktop">
+      <a href="#home"><span data-i18n="homemenu">Inicio</span></a>
+      <a href="pages/aboutMe.html"><span data-i18n="about">Acerca De Mí</span></a>
+      <a href="#projectsS"><span data-i18n="projects">Proyectos</span></a>
+      <a href="#contactS"><span data-i18n="contact">Contáctame</span></a>
+    </nav>
+    <div class="nav-actions">
+      <select id="languageSelector" aria-label="Idioma">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+        <option value="it">IT</option>
+        <option value="fr">FR</option>
+      </select>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú"><span></span></button>
     </div>
+  </header>
+
+  <nav class="nav-mobile" id="mobileMenu">
+    <a href="#home"><span data-i18n="homemenu">Inicio</span></a>
+    <a href="pages/aboutMe.html"><span data-i18n="about">Acerca De Mí</span></a>
+    <a href="#projectsS"><span data-i18n="projects">Proyectos</span></a>
+    <a href="#contactS"><span data-i18n="contact">Contáctame</span></a>
   </nav>
 
-  <!-- Sección de introducción -->
-  <section class="intro" id="home" data-aos="fade-up">
-    <div class="container">
-      <!-- Video de fondo -->
-      <video autoplay loop muted>
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <video autoplay loop muted playsinline poster="images/pexels-harold-vasquez-853421-2653362.jpg">
         <source src="media/fondo.mp4" type="video/mp4" />
-        Tu navegador no soporta el formato de video.
       </video>
-      <div class="row">
-        <!-- Información principal -->
-        <div class="col-12 col-md-6">
-          <div class="text-info">
-            <h1 id="titleinfo" class="text-withe">DESARROLLADORA <br /> JUNIOR FULL STACK</h1>
-            <h4 id="shortd">"Cada error es un paso firme hacia el triunfo."</h4>
-          </div>
+    </div>
+    <div class="wrap hero-grid">
+      <div data-aos="fade-up">
+        <p class="eyebrow" data-i18n="available">Disponible para proyectos</p>
+        <h1>Dayana <span>Hernández</span></h1>
+        <p class="role" id="titleinfo">Desarrolladora Junior Full Stack</p>
+        <p class="quote" id="shortd">“Cada error es un paso firme hacia el triunfo.”</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projectsS" data-i18n="viewproject">Ver proyectos</a>
+          <a class="btn btn-ghost" id="download" href="media/DOC-20241106-WA0039..pdf" download="CV-Dayana-Hernandez.pdf">Descargar CV</a>
         </div>
-        <!-- Imagen de perfil y botón de descarga -->
-        <div class="col-12 col-md-6" style="text-align: center">
-          <img class="profile img-fluid" src="images/fotoPerfilB&N.jpg" alt="" />
-          <h2 id="checkcv" class="text-withe">Revisa mi CV</h2>
-          <br>
-          <a onclick="saveData()" id="download" class="btn-download" href="media/DOC-20241106-WA0039..pdf"
-            download="MiPortafolio.pdf">Descargar</a>
-        </div>
+      </div>
+      <div class="hero-photo" data-aos="fade-left">
+        <img src="images/dayana-hero-2.png" alt="Retrato de Dayana Hernández" />
       </div>
     </div>
   </section>
 
-  <!-- Sección "Acerca de mí" -->
-  <section class="brv-aboutme" id="brv-aboutme" data-aos="fade-up">
-    <div class="container">
-      <div class="info">
-        <h1 id="about">ACERCA DE MI</h1>
-        <h4 id="description1" style="color: white">
+  <section class="section" id="brv-aboutme">
+    <div class="wrap about-grid">
+      <div class="about-copy" data-aos="fade-up">
+        <p class="eyebrow" data-i18n="about">Acerca De Mí</p>
+        <h2 data-i18n="aboutTitle">Código y escena</h2>
+        <p id="description1">
           Soy desarrolladora web con experiencia en HTML, CSS, JavaScript y Bootstrap. Además, soy artista apasionada por
           la danza, buscando fusionar el arte y la tecnología para crear proyectos innovadores.
-        </h4>
-        <br>
-        <a id="seemore" class="btn-seemore" href="pages/aboutMe.html">Ver más</a>
+        </p>
+        <div class="skill-row">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Bootstrap</span>
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+        </div>
+        <a class="btn btn-ghost" href="pages/aboutMe.html" id="seemore">Ver Más</a>
+      </div>
+      <div class="stat-grid" data-aos="fade-up" data-aos-delay="120">
+        <article class="stat">
+          <b>3+</b>
+          <span data-i18n="statProjects">Proyectos publicados</span>
+        </article>
+        <article class="stat">
+          <b>6</b>
+          <span data-i18n="statStack">Tecnologías en uso</span>
+        </article>
+        <article class="stat">
+          <b>3</b>
+          <span data-i18n="statLangs">Idiomas</span>
+        </article>
+        <article class="stat">
+          <b>∞</b>
+          <span data-i18n="statArt">Arte + código</span>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Sección de proyectos -->
-  <section class="projects" id="projectsS" data-aos="fade-up" style="background-color: black;">
-    <video autoplay loop muted>
-      <source src="media/fondo.mp4" type="video/mp4" />
-      Tu navegador no soporta el formato de video.
-    </video>
-    <div class="container">
-      <h1 class="text-center mb-5" id="myprojects">Mis Proyectos</h1>
-      <div class="scroll-container">
-        <!-- Proyecto 1 -->
-        <div class="project-item">
-          <img src="images/MacBook Mockup, Floating.png" alt="Proyecto 1">
-          <h3 id="titleproject">HamburguerPlus</h3>
-          <p id="descriptionproject">Una página web creada con un enfoque minimalista y funcional, desarrollada exclusivamente con HTML y CSS puro.</p>
-          <a href="pages/hamburguer.html" id="seemore" class="btn btn-dark">Ver más</a>
+  <section class="section" id="projectsS">
+    <div class="wrap">
+      <div class="section-head" data-aos="fade-up">
+        <div>
+          <p class="eyebrow" data-i18n="projects">Proyectos</p>
+          <h2 id="myprojects">Mis Proyectos</h2>
         </div>
-        <!-- Proyecto 2 -->
-        <div class="project-item">
-          <img src="images/MacBook Mockup, Floating (1).png" alt="Proyecto 2">
-          <h3>Connected Concerts</h3>
-          <p>Es una plataforma que permite descubrir y comprar boletos para eventos en vivo, como conciertos y espectáculos, de manera fácil y rápida.</p>
-          <a href="pages/concert.html" class="btn btn-dark">Ver más</a>
-        </div>
-        <!-- Proyecto 3 -->
-        <div class="project-item">
-          <img src="images/MacBook Mockup, Floating (2).png" alt="Proyecto 3">
-          <h3>Calculator IMC</h3>
-          <p id="descriptionBrvImc">El proyecto es una calculadora de IMC desarrollada con HTML, CSS y JavaScript, que permite al usuario calcular su IMC y conocer su estado de salud.</p>
-          <a href="pages/imc.html" class="btn btn-dark">Ver más</a>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card" data-aos="fade-up">
+          <div class="thumb">
+            <img src="images/MacBook Mockup, Floating.png" alt="HamburguerPlus" />
+          </div>
+          <div class="project-body">
+            <div class="skill-row">
+              <span class="chip soft">HTML</span>
+              <span class="chip soft">CSS</span>
+            </div>
+            <h3 id="titleproject">HamburguerPlus</h3>
+            <p id="descriptionproject">Una página web creada con un enfoque minimalista y funcional, desarrollada exclusivamente con HTML y CSS puro.</p>
+            <a class="btn btn-ghost btn-sm" href="pages/hamburguer.html" data-i18n="seemore">Ver Más</a>
+          </div>
+        </article>
+        <article class="project-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="thumb">
+            <img src="images/MacBook Mockup, Floating (1).png" alt="Connected Concerts" />
+          </div>
+          <div class="project-body">
+            <div class="skill-row">
+              <span class="chip soft">HTML</span>
+              <span class="chip soft">CSS</span>
+            </div>
+            <h3>Connected Concerts</h3>
+            <p id="descriptionBrvConcerts">Es una plataforma que permite descubrir y comprar boletos para eventos en vivo, como conciertos y espectáculos, de manera fácil y rápida.</p>
+            <a class="btn btn-ghost btn-sm" href="pages/concert.html" data-i18n="seemore">Ver Más</a>
+          </div>
+        </article>
+        <article class="project-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="thumb">
+            <img src="images/MacBook Mockup, Floating (2).png" alt="Calculator IMC" />
+          </div>
+          <div class="project-body">
+            <div class="skill-row">
+              <span class="chip soft">HTML</span>
+              <span class="chip soft">CSS</span>
+              <span class="chip soft">JS</span>
+            </div>
+            <h3>Calculator IMC</h3>
+            <p id="descriptionBrvImc">El proyecto es una calculadora de IMC desarrollada con HTML, CSS y JavaScript, que permite al usuario calcular su IMC y conocer su estado de salud.</p>
+            <a class="btn btn-ghost btn-sm" href="pages/imc.html" data-i18n="seemore">Ver Más</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contactS">
+    <div class="wrap">
+      <div class="contact-box" data-aos="fade-up">
+        <p class="eyebrow" data-i18n="letsTalk">Hablemos</p>
+        <h2 id="textcontactme">Contáctame</h2>
+        <p data-i18n="contactLead">¿Tienes una idea, un escenario o un producto digital? Escribeme y lo construimos con rigor y sensibilidad.</p>
+        <div class="socials">
+          <a class="social" href="https://www.instagram.com/dayana_08h?utm_source=qr" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a class="social" href="tel:+573125006423">
+            <i class="fas fa-phone-alt"></i>
+            <span>+57 312 500 6423</span>
+          </a>
+          <a class="social" href="https://github.com/dayana82006" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a class="social" href="https://www.linkedin.com/in/dayana-hern%C3%A1ndez-58531a263/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer id="contactS" data-aos="fade-up">
-    <div class="container">
-      <div class="contactme">
-        <h2 id="textcontactme" class="mb-4 text-withe">Contáctame</h2>
-        <div class="row contact-icons">
-          <!-- Íconos de contacto -->
-          <div class="col-12 col-md-3 contact-item">
-            <a href="https://www.instagram.com/dayana_08h?utm_source=qr" target="_blank" class="text-white">
-              <i class="fab fa-instagram"></i>
-              <p>Instagram</p>
-            </a>
-          </div>
-          <div class="col-12 col-md-3 contact-item">
-            <a href="tel:+57 3125006423" class="text-white">
-              <i class="fas fa-phone-alt"></i>
-              <p>+57 3125006423</p>
-            </a>
-          </div>
-          <div class="col-12 col-md-3 contact-item">
-            <a href="https://github.com/dayana82006" target="_blank" class="text-white">
-              <i class="fab fa-github"></i>
-              <p>GitHub</p>
-            </a>
-          </div>
-          <div class="col-12 col-md-3 contact-item">
-            <a href="https://www.linkedin.com/in/dayana-hern%C3%A1ndez-58531a263/" target="_blank" class="text-white">
-              <i class="fab fa-linkedin"></i>
-              <p>LinkedIn</p>
-            </a>
-          </div>
-          <p>&copy;<p id="copy"> 2024 Dayana Hernández - Todos los derechos reservados.</p></p>
-        </div>
-      </div>
-    </div>
+  <footer class="site-footer">
+    <p>&copy; <span id="copy">2025 Dayana Hernández - Todos los derechos reservados.</span></p>
   </footer>
 
-  <!-- Scripts -->
-  <script>
-    // Inicialización de AOS (animaciones)
-    document.addEventListener("DOMContentLoaded", function () {
-      AOS.init({
-        duration: 1000, // Duración de la animación
-        easing: "ease", // Suavizado
-        once: true, // Animación una sola vez
-      });
-    });
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/app.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
-
 </html>

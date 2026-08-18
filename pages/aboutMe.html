@@ -1,293 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acerca de mí · Dayana Hernández</title>
+  <link rel="icon" type="image/png" href="../images/dh.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <nav class="navbar navbar-dark bg-black fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="logo" src="../images/dh.png" alt="" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas text-bg-dark canva" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 id="textmenu" class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                        Explorar mas
-                    </h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <select id="languageSelector" class="form-select w-auto mx-auto">
-                            <option value="es">Español</option>
-                            <option value="en">English</option>
-                            <option value="it">Italiano</option>
-                            <option value="fr">French</option>
-                        </select>
-                        <li class="nav-item">
-                            <a id="homemenu" class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="about" class="nav-link" href="#aboutme">Acerca de</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="personalinf" class="nav-link" href="#personalinfoS">Inf personal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="myhistory" class="nav-link" href="#myhistoryS">Mi Historia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="contact" class="nav-link" href="#contactS">Contactame</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+  <header class="site-header">
+    <a class="logo" href="../index.html"><img src="../images/dh.png" alt="Dayana Hernández" /></a>
+    <nav class="nav-desktop">
+      <a href="../index.html"><span data-i18n="homemenu">Inicio</span></a>
+      <a class="is-active" href="#aboutme"><span data-i18n="about">Acerca De Mí</span></a>
+      <a href="#personalinfoS"><span data-i18n="personalinf">Inf Personal</span></a>
+      <a href="#myhistoryS"><span data-i18n="myhistory">Mi Historia</span></a>
+      <a href="#contactS"><span data-i18n="contact">Contáctame</span></a>
     </nav>
+    <div class="nav-actions">
+      <select id="languageSelector" aria-label="Idioma">
+        <option value="es">ES</option>
+        <option value="en">EN</option>
+        <option value="it">IT</option>
+        <option value="fr">FR</option>
+      </select>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú"><span></span></button>
+    </div>
+  </header>
 
-    <!-- seccion acerca de mi -->
-    <section id="aboutme" class="aboutme" data-aos="fade-up">
-        <video autoplay loop muted>
-            <source src="../media/fondo.mp4" type="video/mp4" />
-            Tu navegador no soporta el formato de video.
-        </video>
-        <div class="container aboutmeC">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="info-profile">
-                        <h1 class="text-withe" id="profilep">Perfil profesional</h1>
-                        <hr />
-                        <p style="color: rgb(212, 212, 212);" id="description2">
-                            Actualmente, estoy desarrollando mis conocimientos en
-                            <strong>programación</strong>, con un enfoque en la creación de soluciones
-                            digitales innovadoras. Mi capacidad para aprender <strong>rápidamente</strong> me
-                            permite adaptarme a nuevas herramientas y lenguajes, enfrentando
-                            desafíos tecnológicos con agilidad y compromiso.
-                        </p>
-                        <h2 id="checkcv" class="text-withe">Revisa mi CV</h2>
-                        <br>
-                        <a onclick="saveData()" id="download" class="btn-download" href="media/DOC-20241106-WA0039..pdf"
-                            download="MiPortafolio.pdf">Descargar</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="info-profile2">
-                        <img class="responsive-img" src="../images/dayana.jpg.jpg" alt="" />
-                        <h1 class="text-withe" id="profilec">Perfil Creativo</h1>
-                        <hr />
-                        <p style="color: rgb(179, 179, 179);" id="description3">
-                            Al mismo tiempo, mi formación en danza me ha enseñado a ser
-                            disciplinada, creativa y a trabajar en equipo, habilidades que
-                            también aplico en el ámbito tecnológico. Mi interés radica en
-                            poder fusionar estos dos mundos, explorando cómo la tecnología
-                            puede potenciar la expresión artística y viceversa. Busco
-                            desarrollarme en campos como el desarrollo web y la
-                            automatización de procesos, siempre con un enfoque que valore la
-                            creatividad, la innovación y el trabajo colaborativo.
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
+  <nav class="nav-mobile" id="mobileMenu">
+    <a href="../index.html"><span data-i18n="homemenu">Inicio</span></a>
+    <a href="#aboutme"><span data-i18n="about">Acerca De Mí</span></a>
+    <a href="#personalinfoS"><span data-i18n="personalinf">Inf Personal</span></a>
+    <a href="#myhistoryS"><span data-i18n="myhistory">Mi Historia</span></a>
+    <a href="#contactS"><span data-i18n="contact">Contáctame</span></a>
+  </nav>
+
+  <section class="page-hero" id="aboutme">
+    <div class="wrap">
+      <p class="eyebrow" data-aos="fade-up" data-i18n="about">Acerca De Mí</p>
+      <div class="split" style="margin-top: 28px;">
+        <article class="glass" data-aos="fade-up">
+          <img class="profile-shot" src="../images/dayana-hero-2.png" alt="Dayana Hernández" />
+          <h2 id="profilep">Perfil profesional</h2>
+          <p id="description2">
+            Actualmente, estoy desarrollando mis conocimientos en programación, con un enfoque en la creación de soluciones digitales innovadoras. Mi capacidad para aprender rápidamente me permite adaptarme a nuevas herramientas y lenguajes, enfrentando desafíos tecnológicos con agilidad y compromiso.
+          </p>
+          <div class="hero-actions" style="margin-top: 22px;">
+            <a class="btn btn-primary" id="download" href="../media/DOC-20241106-WA0039..pdf" download="CV-Dayana-Hernandez.pdf">Descargar CV</a>
+          </div>
+        </article>
+        <article class="glass" data-aos="fade-up" data-aos-delay="100">
+          <img class="profile-shot" src="../images/dayana.jpg.jpg" alt="Perfil creativo" />
+          <h2 id="profilec">Perfil Creativo</h2>
+          <p id="description3">
+            Al mismo tiempo, mi formación en danza me ha enseñado a ser disciplinada, creativa y a trabajar en equipo, habilidades que también aplico en el ámbito tecnológico. Mi interés radica en poder fusionar estos dos mundos, explorando cómo la tecnología puede potenciar la expresión artística y viceversa. Busco desarrollarme en campos como el desarrollo web y la automatización de procesos, siempre con un enfoque que valore la creatividad, la innovación y el trabajo colaborativo.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="personalinfoS">
+    <div class="wrap">
+      <div class="section-head" data-aos="fade-up">
+        <div>
+          <p class="eyebrow" data-i18n="personalinf">Inf Personal</p>
+          <h2 id="idm">Idiomas que práctico</h2>
         </div>
+      </div>
+      <div class="lang-grid" data-aos="fade-up">
+        <article class="lang-card">
+          <img src="../images/lengua-espanola.png" alt="" />
+          <h5 id="es">Español</h5>
+          <p class="muted" id="native">Nativo</p>
+        </article>
+        <article class="lang-card">
+          <img src="../images/hola.png" alt="" />
+          <h5 id="in">Ingles</h5>
+          <p class="muted"><span id="level">Nivel</span> A2.3</p>
+        </article>
+        <article class="lang-card">
+          <img src="../images/chao.png" alt="" />
+          <h5 id="it">Italiano</h5>
+          <p class="muted"><span data-i18n="level">Nivel</span> A2</p>
+        </article>
+      </div>
 
-    </section>
+      <div class="skill-cols" style="margin-top: 28px;">
+        <article class="skill-block" data-aos="fade-up">
+          <h4><img class="icon" src="../images/computadora.png" alt="" /> <span id="skillsT">Habilidades Técnicas</span></h4>
+          <ul>
+            <li><img src="../images/codigo.png" alt="" /> <span id="programming">Programacion</span> (HTML, CSS, JavaScript, Bootstrap)</li>
+            <li><img src="../images/codigo.png" alt="" /> Python, Java</li>
+            <li><img src="../images/ballet.png" alt="" /> <span id="knowledge">Conocimientos en Danza</span></li>
+          </ul>
+        </article>
+        <article class="skill-block" data-aos="fade-up" data-aos-delay="80">
+          <h4><img class="icon" src="../images/mujer.png" alt="" /> <span id="skillsP">Habilidades Personales</span></h4>
+          <ul>
+            <li><img src="../images/adaptacion.png" alt="" /> <span id="adaptation">Adaptación al cambio</span></li>
+            <li><img src="../images/tareas-diarias.png" alt="" /> <span id="resp">Responsabilidad</span></li>
+            <li><img src="../images/desafios.png" alt="" /> <span id="perp">Perseverancia</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <!-- seccion informacion personal -->
-    <section class="personalinfo" id="personalinfoS" data-aos="fade-up">
-        <video autoplay loop muted>
-            <source src="../media/fondo.mp4" type="video/mp4" />
-            Tu navegador no soporta el formato de video.
-        </video>
-        <div class="container">
-            <div class="infop container my-4">
+  <section class="section" id="myhistoryS">
+    <div class="wrap story" data-aos="fade-up">
+      <p class="eyebrow" data-i18n="myhistory">Mi Historia</p>
+      <h2 id="myshorthistory">Mi Breve Historia</h2>
+      <p id="history">Mi historia con la tecnología comenzó en el colegio cuando formaba parte del equipo de robótica. Fue allí donde descubrí mi fascinación por cómo funciona el mundo digital y la posibilidad de crear cosas nuevas con la programación. Ese interés creció aún más cuando vi a mi papá programar; verlo en acción me inspiró a aprender y seguir su ejemplo, y me dio la motivación para explorar este campo. Sin embargo, no todo fue un camino recto. Hubo un momento en que intenté ingresar a la Fuerza Aérea, pero no lo logré. Aunque ese fracaso me produjo frustración, fue precisamente mi perseverancia y determinación lo que me permitió superar ese obstáculo. En lugar de quedarme estancada, decidí que lo más importante era seguir adelante, buscando nuevas oportunidades para aprender y crecer. Siempre he tenido una curiosidad insaciable por el aprendizaje. A lo largo de los años, he explorado diversas áreas como el dibujo, la pintura, la musica, el deporte, pero la mas importante de ellas fue la danza, en especial el ballet, un arte que me llamó la atención desde pequeña. Sin embargo, fue hasta este año que finalmente pude empezar a practicarlo, lo que me enseñó que nunca es tarde para perseguir nuestros sueños y pasiones, por más que parezcan inalcanzables. En mi camino como programadora, encontré un campus que ha sido clave en mi formación, donde he aprendido no solo programación, sino también habilidades blandas e inglés, lo cual ha sido esencial para mi desarrollo. La programación es un mundo fascinante, y me encanta descubrir cómo detrás de cada página web o juego, hay una estructura compleja que las máquinas interpretan a través del código. Esta capacidad de entender y dar vida a lo que parece invisible me llena de emoción, y me impulsa a seguir explorando y creando.</p>
+    </div>
+  </section>
 
-                <h3 id="idm" class="text-center text-withe">Idiomas que práctico</h3>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <img class="icon-idiom" src="../images/lengua-espanola.png" alt="Icono Herramientas" width="24"
-                            class="me-2">
-                        <h5 id="es" class="mt-2">Español</h5>
-                        <p id="native" style="color: rgb(167, 167, 167);">Nativo</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="icon-idiom" src="../images/hola.png" alt="Icono Herramientas" width="24"
-                            class="me-2">
-                        <h5 id="in" class="mt-2">Inglés</h5>
-                        <p style="color: rgb(167, 167, 167);"><strong id="level">Nivel</strong> A2.3</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="icon-idiom" src="../images/chao.png" alt="Icono Herramientas" width="24"
-                            class="me-2">
-                        <h5 id="it" class="mt-2">Italiano</h5>
-                        <p style="color: rgb(167, 167, 167);"><strong id="level">Nivel</strong> A2</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h4 id="skillsT" class="text-withe">
-                            <img class=" icon" src="../images/computadora.png" alt="Icono Herramientas" width="24"
-                                class="me-2">
-                            Habilidades Técnicas
-                        </h4>
-                        <ul class="list-unstyled mt-3">
-                            <li>
-                                <img class="icon" src="../images/codigo.png" alt="Icono Programación" width="20"
-                                    class="me-2">
-                               <strong id="programming">Programación </strong>(HTML, CSS, JavaScript, Bootstrap)
-                            </li>
-                            <li>
-                                <img class="icon" src="../images/codigo.png" alt="Icono Programación" width="20"
-                                    class="me-2">
-                                    <strong id="programming">Programación </strong> (Python, Java)
-                            </li>
-                            <li>
-                                <img class="icon" src="../images/ballet.png" alt="Icono Danza" width="20" class="me-2">
-                                <strong id="knowledge"> Conocimientos en danza</strong>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Habilidades personales -->
-                    <div class="col-md-6">
-                        <h4 id="skillsP" class="text-withe">
-                            <img class=" icon" src="../images/mujer.png" alt="Icono Persona" width="24" class="me-2">
-                            Habilidades Personales
-                        </h4>
-                        <ul class="list-unstyled mt-3">
-                            <li>
-                                <img class="icon" src="../images/adaptacion.png" alt="Icono Adaptación" width="20"
-                                    class="me-2">
-                               <strong id="adaptation">Adaptación al cambio</strong> 
-                            </li>
-                            <li>
-                                <img class="icon" src="../images/tareas-diarias.png" alt="Icono Responsabilidad"
-                                    width="20" class="me-2">
-                               <strong  id="resp" >Responsabilidad</strong> 
-                            </li>
-                            <li >
-                                <img class="icon" src="../images/desafios.png" alt="Icono Perseverancia" width="20"
-                                    class="me-2">
-                               <strong 
-                                id="perp">Perseverancia</strong> 
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="myhistory" id="myhistoryS" data-aos="fade-up">
-        <div class="container">
-            <video autoplay loop muted>
-                <source src="../media/fondo.mp4" type="video/mp4" />
-                Tu navegador no soporta el formato de video.
-            </video>
-            <h1 class="text-withe" id="myshorthistory">Mi Breve Historia</h1>
-            <p id="history">Mi historia con la tecnología comenzó en el colegio,
-                cuando formaba parte del equipo de robótica.
-                Fue allí donde descubrí mi fascinación por cómo funciona
-                el mundo digital y la posibilidad de crear cosas nuevas
-                con la programación. Ese interés creció aún más cuando vi
-                a mi papá programar; verlo en acción me inspiró a aprender
-                y seguir su ejemplo, y me dio la motivación para explorar este campo.
-                <br>
-                <br>
-                Sin embargo, no todo fue un camino recto.
-                Hubo un momento en que intenté ingresar a la Fuerza
-                Aérea, pero no lo logré. Aunque ese fracaso me
-                produjo frustración, fue precisamente mi perseverancia y
-                determinación lo que me permitió superar ese obstáculo.
-                En lugar de quedarme estancada, decidí que lo más importante
-                era seguir adelante, buscando nuevas oportunidades para aprender y crecer.
-                <br>
-                <br>
-                Siempre he tenido una curiosidad insaciable
-                por el aprendizaje. A lo largo de los años,
-                he explorado diversas áreas como el dibujo, la pintura, la musica,
-                el deporte, pero la mas importante de ellas fue la danza,
-                en especial el ballet, un arte que me llamó la atención
-                desde pequeña. Sin embargo, fue hasta este año
-                que finalmente pude empezar a practicarlo, lo
-                que me enseñó que nunca es tarde para perseguir
-                nuestros sueños y pasiones, por más que parezcan inalcanzables.
-                En mi camino como programadora, encontré un campus que ha sido clave en mi formación, donde he aprendido
-                no solo programación, sino también habilidades blandas e inglés, lo cual ha sido esencial para mi
-                desarrollo. La programación es un mundo fascinante, y me encanta descubrir cómo detrás de cada página
-                web o juego, hay una estructura compleja que las máquinas interpretan a través del código. Esta
-                capacidad de entender y dar vida a lo que parece invisible me llena de emoción, y me impulsa a seguir
-                explorando y creando.
-            </p>
+  <section class="section contact" id="contactS">
+    <div class="wrap">
+      <div class="contact-box" data-aos="fade-up">
+        <p class="eyebrow" data-i18n="letsTalk">Hablemos</p>
+        <h2 id="textcontactme">Contáctame</h2>
+        <div class="socials">
+          <a class="social" href="https://www.instagram.com/dayana_08h?utm_source=qr" target="_blank" rel="noopener">
+            <i class="fab fa-instagram"></i><span>Instagram</span>
+          </a>
+          <a class="social" href="tel:+573125006423">
+            <i class="fas fa-phone-alt"></i><span>+57 312 500 6423</span>
+          </a>
+          <a class="social" href="https://github.com/dayana82006" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i><span>GitHub</span>
+          </a>
+          <a class="social" href="https://www.linkedin.com/in/dayana-hern%C3%A1ndez-58531a263/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+          </a>
         </div>
-    </section>
-    <footer id="contactS" data-aos="fade-up">
-        <div class="container">
-            <div class="contactme">
-                <h2 id="textcontactme" class="mb-4 text-withe">Contactame</h2>
-                <div class="row contact-icons">
-                    <!-- Instagram -->
-                    <div class="col-12 col-md-3 contact-item">
-                        <a href="https://www.instagram.com/dayana_08h?utm_source=qr" target="_blank" class="text-white">
-                            <i class="fab fa-instagram"></i>
-                            <p>Instagram</p>
-                        </a>
-                    </div>
+      </div>
+    </div>
+  </section>
 
-                    <!-- Teléfono -->
-                    <div class="col-12 col-md-3 contact-item">
-                        <a href="tel:+57 3125006423" class="text-white">
-                            <i class="fas fa-phone-alt"></i>
-                            <p>+57 3125006423</p>
-                        </a>
-                    </div>
+  <footer class="site-footer">
+    <p>&copy; <span id="copy">2025 Dayana Hernández - Todos los derechos reservados.</span></p>
+  </footer>
 
-                    <!-- GitHub -->
-                    <div class="col-12 col-md-3 contact-item">
-                        <a href="https://github.com/dayana82006" target="_blank" class="text-white">
-                            <i class="fab fa-github"></i>
-                            <p>GitHub</p>
-                        </a>
-                    </div>
-
-                    <!-- LinkedIn -->
-                    <div class="col-12 col-md-3 contact-item">
-                        <a href="https://www.linkedin.com/in/dayana-hern%C3%A1ndez-58531a263/" target="_blank"
-                            class="text-white">
-                            <i class="fab fa-linkedin"></i>
-                            <p>LinkedIn</p>
-                        </a>
-                    </div>
-
-                    <p>&copy;<p id="copy"> 2024 Dayana Hernández - Todos los derechos reservados.</p></p>
-
-                </div>
-            </div>
-        </div>
-
-    </footer>
-    <script> document.addEventListener("DOMContentLoaded", function() {
-        AOS.init({
-          duration: 1000, // Duración de la animación
-          easing: "ease", // Suavizado
-          once: true,     // Animación una sola vez
-        });
-      });
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="../js/app.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="../js/app.js"></script>
 </body>
-
 </html>
