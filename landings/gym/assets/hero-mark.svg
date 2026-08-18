@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 420" role="img" aria-label="Símbolo de yunque y llama">
+  <defs>
+    <linearGradient id="ember" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#ff6a1a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="50%">
+      <stop offset="0" stop-color="#ff6a1a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ff6a1a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="480" height="420" rx="28" fill="#0d0d11"/>
+  <circle cx="240" cy="160" r="150" fill="url(#glow)"/>
+  <path d="M240 54c18 28 12 52 0 68 24-8 50 4 60 26-16-46 2-80 26-102-38 6-64 0-86 8z" fill="url(#ember)"/>
+  <path d="M168 214h144c22 0 40 14 46 34H122c6-20 24-34 46-34z" fill="#d8d2c8"/>
+  <path d="M150 248h180v18H150z" fill="#a39b90"/>
+  <path d="M214 266h52v72h-52z" fill="#c8c0b4"/>
+  <path d="M176 338h128v18H176z" fill="#8d867c"/>
+  <text x="240" y="392" text-anchor="middle" font-family="Bebas Neue, Impact, sans-serif" font-size="28" letter-spacing="8" fill="#ffb347">FORJA</text>
+</svg>

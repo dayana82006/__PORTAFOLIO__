@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FORJA — gimnasio de alto rendimiento. Fuerza, HIIT, boxeo y coaching. Empieza tu transformación hoy." />
+    <meta name="theme-color" content="#070708" />
+    <title>FORJA — Donde se forja el cuerpo</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#inicio">Saltar al contenido</a>
+    <a href="../../index.html#landings" class="to-portfolio">← Portafolio · Imperiumteck</a>
+    <style>
+      .to-portfolio{position:fixed;bottom:16px;left:16px;z-index:90;background:#07080a;color:#f3efe8;border:1px solid rgba(243,239,232,.18);border-radius:999px;padding:10px 16px;font:500 13px/1 system-ui,sans-serif;text-decoration:none}
+    </style>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a class="logo" href="#inicio" aria-label="FORJA, ir al inicio">
+          <img src="assets/logo.svg" alt="" width="36" height="36" />
+          <span>FORJA</span>
+        </a>
+        <nav class="nav" id="nav" aria-label="Principal">
+          <a href="#programas">Programas</a>
+          <a href="#coaches">Coaches</a>
+          <a href="#planes">Planes</a>
+          <a href="#testimonios">Historias</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <a class="btn btn--sm header__cta" href="#planes">Hazte miembro</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Gimnasio de alto rendimiento · Madrid</p>
+            <h1>
+              El límite no es el cuerpo.
+              <span class="accent">Es la decisión.</span>
+            </h1>
+            <p class="lead">
+              Entrena fuerza, acondicionamiento y combate en 2.400 m² diseñados para rendir.
+              Coaches reales. Progresión medible. Cero relleno.
+            </p>
+            <div class="hero__actions">
+              <a class="btn" href="#planes">Empieza ahora</a>
+              <a class="btn btn--ghost" href="#programas">Ver programas</a>
+            </div>
+            <dl class="hero__meta">
+              <div>
+                <dt>Primera sesión</dt>
+                <dd>Gratis</dd>
+              </div>
+              <div>
+                <dt>Horario</dt>
+                <dd>6:00 – 23:00</dd>
+              </div>
+              <div>
+                <dt>Ubicación</dt>
+                <dd>Calle del Hierro 24</dd>
+              </div>
+            </dl>
+          </div>
+          <aside class="hero__panel" aria-label="Resumen del club">
+            <div class="hero__badge">
+              <img src="assets/icons/flame.svg" alt="" width="22" height="22" />
+              Entrenamiento con propósito
+            </div>
+            <figure class="hero__visual">
+              <img src="assets/hero-mark.svg" alt="Marca FORJA: yunque y llama" />
+            </figure>
+            <p class="hero__quote">“Aquí no se viene a posar. Se viene a forjar.”</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Cifras del club">
+        <div class="container stats__row">
+          <article>
+            <strong data-count="12">0</strong>
+            <span>años forjando atletas</span>
+          </article>
+          <article>
+            <strong data-count="48">0</strong>
+            <span>clases semanales</span>
+          </article>
+          <article>
+            <strong data-count="18">0</strong>
+            <span>coaches certificados</span>
+          </article>
+          <article>
+            <strong><span data-count="2400">0</span> m²</strong>
+            <span>de suelo de entrenamiento</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="programas">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Programas</p>
+            <h2>Elige cómo quieres transformarte</h2>
+            <p class="section__intro">
+              Seis líneas de trabajo. Una misma exigencia: técnica limpia, intensidad justa y resultados que se ven en el espejo y en los números.
+            </p>
+          </header>
+          <div class="cards">
+            <article class="card">
+              <img src="assets/icons/strength.svg" alt="" width="40" height="40" />
+              <h3>Fuerza &amp; hipertrofia</h3>
+              <p>Barras, progresión lineal y control de volumen. El camino más honesto para ganar músculo y potencia.</p>
+            </article>
+            <article class="card">
+              <img src="assets/icons/hiit.svg" alt="" width="40" height="40" />
+              <h3>HIIT Ember</h3>
+              <p>Intervalos cortos, mucho foco. Quema, capacidad de trabajo y una cabeza que no se rinde al minuto cuatro.</p>
+            </article>
+            <article class="card">
+              <img src="assets/icons/boxing.svg" alt="" width="40" height="40" />
+              <h3>Boxeo</h3>
+              <p>Guardia, footwork y saco. Combate técnico para canalizar agresividad sin perder precisión.</p>
+            </article>
+            <article class="card">
+              <img src="assets/icons/mobility.svg" alt="" width="40" height="40" />
+              <h3>Movilidad</h3>
+              <p>Caderas, hombros y columna. Rango útil para levantar más y doler menos al día siguiente.</p>
+            </article>
+            <article class="card">
+              <img src="assets/icons/cross.svg" alt="" width="40" height="40" />
+              <h3>Cross Performance</h3>
+              <p>Motores mixtos: Olympic lifts, gimnasia y metcons. Para quien quiere ser atleta, no solo “ir al gym”.</p>
+            </article>
+            <article class="card">
+              <img src="assets/icons/nutrition.svg" alt="" width="40" height="40" />
+              <h3>Nutrición</h3>
+              <p>Planes realistas, no milagros. Acompañamiento para que el entrenamiento no se quede a medias.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="metodo">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Método FORJA</p>
+            <h2>Tres pilares. Sin atajos.</h2>
+            <ol class="pillars">
+              <li>
+                <span>01</span>
+                <div>
+                  <h3>Diagnóstico</h3>
+                  <p>Evaluamos fuerza, movilidad y hábitos. Nada de rutinas genéricas descargadas de internet.</p>
+                </div>
+              </li>
+              <li>
+                <span>02</span>
+                <div>
+                  <h3>Progresión</h3>
+                  <p>Cargas, densidad y recuperación planificadas. Cada semana tiene un porqué.</p>
+                </div>
+              </li>
+              <li>
+                <span>03</span>
+                <div>
+                  <h3>Comunidad</h3>
+                  <p>El entorno empuja. Entrenar entre gente seria acelera lo que la motivación sola no sostiene.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+          <aside class="hours">
+            <h3>Horario del box</h3>
+            <ul>
+              <li><span>Lunes – Viernes</span><strong>06:00 – 23:00</strong></li>
+              <li><span>Sábado</span><strong>08:00 – 20:00</strong></li>
+              <li><span>Domingo</span><strong>09:00 – 14:00</strong></li>
+            </ul>
+            <p class="hours__note">Clases dirigidas de 6:30 a 21:30. Zona de peso libre abierta todo el horario.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="coaches">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Equipo</p>
+            <h2>Coaches que entrenan, no solo recetan</h2>
+          </header>
+          <div class="coaches">
+            <article class="coach">
+              <div class="coach__avatar" data-initials="MR"></div>
+              <h3>Marta Ruiz</h3>
+              <p class="coach__role">Head Coach · Fuerza</p>
+              <p>Powerlifting y hipertrofia. 11 años programando para gente que quiere números, no poses.</p>
+            </article>
+            <article class="coach">
+              <div class="coach__avatar coach__avatar--2" data-initials="DV"></div>
+              <h3>Diego Vargas</h3>
+              <p class="coach__role">Boxeo &amp; acondicionamiento</p>
+              <p>Ex competidor amateur. Enseña a golpear limpio y a no apagar el gas en el tercer asalto.</p>
+            </article>
+            <article class="coach">
+              <div class="coach__avatar coach__avatar--3" data-initials="AL"></div>
+              <h3>Aina López</h3>
+              <p class="coach__role">Movilidad &amp; rendimiento</p>
+              <p>Fisioterapia + S&amp;C. El cuerpo tiene que moverse bien antes de mover mucho.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="planes">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Membresías</p>
+            <h2>Un plan. Sin letra pequeña rara.</h2>
+            <p class="section__intro">Cancela cuando quieras. La primera sesión guiada es gratuita en todos los planes.</p>
+          </header>
+          <div class="pricing">
+            <article class="price">
+              <h3>Spark</h3>
+              <p class="price__tag">Para empezar con estructura</p>
+              <p class="price__amount">39€<span>/mes</span></p>
+              <ul>
+                <li>Acceso a peso libre y cardio</li>
+                <li>4 clases dirigidas / mes</li>
+                <li>Evaluación inicial</li>
+                <li>App de reservas</li>
+              </ul>
+              <a class="btn btn--ghost" href="#contacto">Elegir Spark</a>
+            </article>
+            <article class="price price--featured">
+              <p class="price__badge">Recomendado</p>
+              <h3>Forge</h3>
+              <p class="price__tag">El estándar FORJA</p>
+              <p class="price__amount">69€<span>/mes</span></p>
+              <ul>
+                <li>Acceso ilimitado al box</li>
+                <li>Clases dirigidas ilimitadas</li>
+                <li>1 sesión de coaching / mes</li>
+                <li>Plan de nutrición base</li>
+              </ul>
+              <a class="btn" href="#contacto">Elegir Forge</a>
+            </article>
+            <article class="price">
+              <h3>Titán</h3>
+              <p class="price__tag">Si vas en serio</p>
+              <p class="price__amount">109€<span>/mes</span></p>
+              <ul>
+                <li>Todo lo de Forge</li>
+                <li>Coach asignado semanal</li>
+                <li>Programación individual</li>
+                <li>Invitado 4 veces / mes</li>
+              </ul>
+              <a class="btn btn--ghost" href="#contacto">Elegir Titán</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonios">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow">Historias</p>
+            <h2>Lo que se forja aquí se nota fuera</h2>
+          </header>
+          <div class="quotes">
+            <blockquote>
+              <p>En tres meses pasé de evitar las dominadas a hacer series de 8. Nadie me vendió magia: me enseñaron a trabajar.</p>
+              <footer>— Laura G., plan Forge</footer>
+            </blockquote>
+            <blockquote>
+              <p>Venía del “yo me lo monto”. Aquí hay ojos encima y una comunidad que no te deja escaquearte. Justo lo que necesitaba.</p>
+              <footer>— Héctor P., plan Titán</footer>
+            </blockquote>
+            <blockquote>
+              <p>El boxeo me ordenó la cabeza. Diego no grita por gritar: corrige, exige y te hace salir mejor de como entraste.</p>
+              <footer>— Nuria S., plan Spark</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="faq">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>Preguntas que sí importan</h2>
+          </div>
+          <div class="faq" id="faqList">
+            <details open>
+              <summary>¿Necesito experiencia previa?</summary>
+              <p>No. El diagnóstico inicial coloca a cada persona en el nivel correcto. Lo que sí pedimos es constancia.</p>
+            </details>
+            <details>
+              <summary>¿Hay permanencia?</summary>
+              <p>No. Pagas mes a mes. Si te vas, te vas. Preferimos que te quedes porque el sitio funciona.</p>
+            </details>
+            <details>
+              <summary>¿La primera sesión es realmente gratis?</summary>
+              <p>Sí. Tour + evaluación de 45 minutos, sin tarjeta de por medio. Si no encaja, no hay drama.</p>
+            </details>
+            <details>
+              <summary>¿Puedo entrenar solo?</summary>
+              <p>Sí. La zona de peso libre está abierta en todo el horario. Las clases son opcionales, excepto en Spark (cupo mensual).</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacto">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Reserva</p>
+            <h2>Ven a forjar tu primera sesión</h2>
+            <p class="section__intro">
+              Déjanos tu nombre y un teléfono. Te escribimos en menos de un día laborable para agendar la evaluación gratuita.
+            </p>
+            <ul class="contact-list">
+              <li><strong>Dirección</strong> Calle del Hierro 24, 28045 Madrid</li>
+              <li><strong>Teléfono</strong> <a href="tel:+34910000000">+34 91 000 00 00</a></li>
+              <li><strong>Email</strong> <a href="mailto:hola@forjagym.es">hola@forjagym.es</a></li>
+            </ul>
+          </div>
+          <form class="form" id="leadForm" novalidate>
+            <label>
+              Nombre
+              <input type="text" name="nombre" autocomplete="name" required />
+            </label>
+            <label>
+              Teléfono
+              <input type="tel" name="telefono" autocomplete="tel" required />
+            </label>
+            <label>
+              Plan de interés
+              <select name="plan">
+                <option value="Spark">Spark</option>
+                <option value="Forge" selected>Forge</option>
+                <option value="Titán">Titán</option>
+                <option value="Solo sesión">Solo la sesión gratis</option>
+              </select>
+            </label>
+            <label>
+              Mensaje <span class="optional">(opcional)</span>
+              <textarea name="mensaje" rows="3" placeholder="Horario preferido, objetivos…"></textarea>
+            </label>
+            <button class="btn" type="submit">Pedir mi sesión gratis</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="logo" href="#inicio">
+          <img src="assets/logo.svg" alt="" width="32" height="32" />
+          <span>FORJA</span>
+        </a>
+        <p>© <span id="year"></span> FORJA Gym. Entrenamiento con propósito.</p>
+        <p class="footer__note">Proyecto demo · landing estática HTML/CSS/JS</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
